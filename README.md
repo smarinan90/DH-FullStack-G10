@@ -1,7 +1,8 @@
+#INVISIBLE RECORDS
 # Grupo10 Proyecto integrador 
 Proyecto integrador grupo 10 - Digital House 
 ## Descripción del proyecto 
-Ecomerce Discos de Vinilo
+E-commerce para la compra de discos de vinilo
 ## Colaboradores
 - Santiago Marín 
 - Daniel Amaya Buitrago 
