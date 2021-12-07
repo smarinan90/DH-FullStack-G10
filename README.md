@@ -1,4 +1,4 @@
-# INVISIBLE RECORDS - Grupo10 Proyecto integrador 
+# INVISIBLE RECORDS
 Proyecto integrador grupo 10 - Digital House 
 ## Descripción del proyecto 
 E-commerce para la compra de discos de vinilo
