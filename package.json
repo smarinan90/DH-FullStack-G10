@@ -1,0 +1,33 @@
+{
+  "name": "invisible_records",
+  "version": "1.0.0",
+  "description": "Vinyl records e-commerce mock-up",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smarinan90/DH-FullStack-G10.git"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "HTML",
+    "JAVASCRIPT",
+    "NODE.JS"
+  ],
+  "author": "VARIOUS",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/smarinan90/DH-FullStack-G10/issues"
+  },
+  "homepage": "https://github.com/smarinan90/DH-FullStack-G10#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
