@@ -1,11 +1,11 @@
 module.exports = {
     home: (req, res) => {
-        res.render('home')
+        res.render('home');
     },
     register: (req, res) => {
-        res.render('register')
+        res.render('register');
     },
     login: (req, res) => {
-        res.render('login')
+        res.render('login');
     }
 };
