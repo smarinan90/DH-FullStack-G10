@@ -13,7 +13,7 @@ router.get('/register', mainController.register);
 // Product Routes
 
 router.get('/products', productController.products);
-router.get('/product', productController.single_products);
+router.get('/product', productController.single_product);
 
 // Cart Routes
 
