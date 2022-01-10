@@ -1,8 +1,8 @@
 module.exports = {
-    products: (res, req) => {
+    products: (req, res) => {
         res.render('products')
     },
-    single_products: (res, req) => {
+    single_products: (req, res) => {
         res.render('single_product')
     }
 };
