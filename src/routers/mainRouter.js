@@ -12,12 +12,12 @@ router.get('/register', mainController.register);
 
 // Product Routes
 
-router.get('/', productController.products);
-router.get('/', productController.single_product);
+router.get('/products', productController.products);
+router.get('/product', productController.single_product);
 
 // Cart Routes
 
-router.get('/', cartController.cart);
+router.get('/cart', cartController.cart);
 
 // Export
 

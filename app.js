@@ -9,7 +9,7 @@ const publicPath = path.resolve(__dirname, "./public");
 
 app.use(express.static(publicPath));
 
-app.set('view engines', 'ejs');
+app.set('view engine', 'ejs');
 app.set('views','./src/views');
 
 app.use(indexRouter);
