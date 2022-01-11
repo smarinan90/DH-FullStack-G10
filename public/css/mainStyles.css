@@ -105,16 +105,16 @@ header{
     width: 40%;
     font-size: var(--text-lg);
     border-top: solid var(--g1) 1.5px; 
-    margin-top: 18px;
     background-color: var(--g3);
     position: absolute;
-    opacity: 0%;
     right: 0px;
     bottom: -296px;
+    transition: visibility 0.3s ease;
+    visibility: collapse;
 }
 
 .menu-icon:hover .menu-list{
-    opacity: 100%;
+    visibility: visible;
 }
 
 .menu-item{
