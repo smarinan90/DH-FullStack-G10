@@ -96,6 +96,10 @@ header{
     color: var(--m1);
 }
 
+.user-actions{
+    display: none;
+}
+
 .menu-icon{
     font-size: var(--title);
     color: var(--g1);
@@ -126,4 +130,39 @@ header{
 .menu-item a{
     text-decoration: none;
     color: var(--g1);
+    width: 100%;
+}
+
+
+/* RESPONSIVE */
+
+@media screen and (min-width: 576px) {
+
+}
+
+@media screen and (min-width: 768px) {
+    body{
+        margin: 12px 3%;
+    }
+    .main-logo{
+        width: 9%;
+    }
+    .search-bar{
+        width: 40%;
+    }
+    .user-actions{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .main-logo{
+        width: 7.5%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .main-logo{
+        width: 6%;
+    }
 }
