@@ -10,15 +10,17 @@ const storage = multer.diskStorage({
         cb(null, path.join(__dirname, '../public/products_images'))
     },
     filename: (req, file, cb) => {
-        cb()
+        cb(null, 'product-' + Date.now() + path.extname('file'))
     }
 })
+
+const upload = multer({ storage })
 
 
 // Cart Routes
 
 router.get('/', adminController.products_list);
-router.get('/edit/:id', adminController.product_edit);
+router.get('/edit/:id', upload.single('cover') ,adminController.product_edit);
 
 // Export
 
