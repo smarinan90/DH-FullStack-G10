@@ -17,10 +17,10 @@ const storage = multer.diskStorage({
 const upload = multer({ storage })
 
 
-// Cart Routes
+// Admin Routes
 
 router.get('/', adminController.products_list);
-router.get('/edit/:id', upload.single('cover') ,adminController.product_edit);
+router.get('/edit/:id', adminController.product_edit);
 
 // Export
 

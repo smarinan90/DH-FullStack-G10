@@ -1,8 +1,8 @@
 module.exports = {
     products_list: (req, res) => {
-        res.render('products_list')
+        res.render('admin/products_list')
     },
     product_edit: (req, res) => {
-        res.render('product_edit')
+        res.render('admin/product_edit')
     }
 }

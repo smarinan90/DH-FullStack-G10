@@ -3,9 +3,9 @@ module.exports = {
         res.render('home');
     },
     register: (req, res) => {
-        res.render('register');
+        res.render('client/register');
     },
     login: (req, res) => {
-        res.render('login');
+        res.render('client/login');
     }
 };
