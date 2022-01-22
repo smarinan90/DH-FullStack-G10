@@ -51,35 +51,3 @@ body {
   flex-wrap: wrap;
   align-items: center;
 }
-
-/* RESPONSIVE */
-
-@media screen and (min-width: 576px) {
-}
-
-@media screen and (min-width: 768px) {
-  body {
-    margin: 12px 3%;
-  }
-  .main-logo {
-    width: 9%;
-  }
-  .search-bar {
-    width: 40%;
-  }
-  .user-actions {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .main-logo {
-    width: 7.5%;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .main-logo {
-    width: 6%;
-  }
-}
