@@ -20,7 +20,9 @@ const upload = multer({ storage })
 // Admin Routes
 
 router.get('/', adminController.products_list);
+
 router.get('/edit/:id', adminController.product_edit);
+router.post('/edit/:id', adminController.store)
 
 // Export
 
