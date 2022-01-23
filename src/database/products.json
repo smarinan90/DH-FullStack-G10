@@ -1,5 +1,30 @@
 [
     {
-        "id": 1
+        "id": 1,
+        "genre": "Blues"
+    },
+    {
+        "id": 2,
+        "genre": "Coutry"
+    },
+    {
+        "id": 3,
+        "genre": "Blues"
+    },
+    {
+        "id": 4,
+        "genre": "Blues"
+    },
+    {
+        "id": 5,
+        "genre": "Blues"
+    },
+    {
+        "id": 6,
+        "genre": "Blues"
+    },
+    {
+        "id": 7,
+        "genre": "Blues"
     }
 ]

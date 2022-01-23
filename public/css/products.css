@@ -3,3 +3,6 @@
   width: 100%;
   margin: 12px 0px;
 }
+
+@media screen and (min-width: 576px) {
+}
