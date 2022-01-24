@@ -1,5 +1,28 @@
 <%-include('../partials/head')%>
 <body>
     <%-include('../partials/header')%>
-    <h1>Hola</h1>
+    <main class="main-login">
+        <form action="/src/views/client/login.ejs" method="POST" class="login" enctype="multipart/form-data">
+            <br>
+            <br>
+            <div>        
+               <input class="nombreUsuario" type="text" name="nombreUsuario" id="userName" placeholder="Nombre de Usuario">
+           </div>    
+           <br>
+           <div>
+               <input class="contrasena" type="password" name="contrasena" id="ps" placeholder="Contraseña">
+           </div>
+           <br>
+           <div>
+               <button class="enviar-button" type="submit">Sign In</button>
+           </div>
+           <p>Don't have an account?<a href="/src/views/client/register.ejs">Sign Up</a></p> 
+           <p class="titulo-register">User profile</p>
+           <br>
+           <div>          
+               <input type="checkbox" name="userProfile" value="Admin">
+               <label class="titulo-option" for="buy">Admin</label>  
+           </div>
+        </form>
+        </main>
 <%- include('../partials/footer')%>
