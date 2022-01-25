@@ -4,18 +4,17 @@
     <main>
         <section class="artists-menu">
             <ul>
-                <li class="artists-item">genre
-                    <ul>
-                        <%genres.forEach(el => { %>
-                            <li><a href="/products?genre=<%el%>"><%- el%></a></li>
-                        <% }); %>
-                    </ul>
-                </li>
-                <li class="artists-item">price</li>
-                <li class="artists-item">relaese year</li>
-                <li class="artists-item"></li>
-                <li class="artists-item">genre</li>
-                <li class="artists-item">genre</li>
+                <li class="artists-item">Genres</li>
+                
+                <%genres.forEach(el => { %>
+                    <li><a href="/products?genre=<%el%>"><%= el%></a></li>
+                <% }); %>
+                   
+                <li class="artists-item">Price</li>
+                <li class="artists-item">Release year</li>
+                <li class="artists-item">New releases</li>
+                <li class="artists-item">Top sellers</li>
+                <li class="artists-item">Discount</li>
             </ul>
         </section>
         <section>

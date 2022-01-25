@@ -1,3 +1,28 @@
+main {
+  display: flex;
+}
+
+main section {
+  margin-right: 12px;
+}
+
+li {
+  border-bottom: solid var(--g1) 1.5px;
+  padding: 12px;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--g1);
+}
+
+.artists-menu {
+  display: none;
+  width: 100%;
+  font-size: var(--text-lg);
+}
+
 .artist-picture {
   display: block;
   width: 100%;
@@ -5,4 +30,7 @@
 }
 
 @media screen and (min-width: 576px) {
+  .artists-menu {
+    display: block;
+  }
 }

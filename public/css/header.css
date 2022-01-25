@@ -55,13 +55,16 @@ header {
 .menu-list {
   width: 40%;
   font-size: var(--text-lg);
-  border-top: solid var(--g1) 1.5px;
-  background-color: var(--g3);
+  background-color: #23232cf0;
   position: absolute;
   right: 0px;
   bottom: -296px;
   transition: visibility 0.3s ease;
   visibility: collapse;
+}
+
+.menu-list ul {
+  margin: 12px;
 }
 
 .menu-icon:hover .menu-list {
