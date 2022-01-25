@@ -10,7 +10,7 @@ module.exports = {
 
         let genres = [];
         productsList.forEach(el => {
-            genres = genres.includes(el.genre) ? genres.push(el.genre) : genre; 
+            genres.includes(el.genre) ? genres : genres.push(el.genre); 
         });
 
         let genreFilter = req.query.genre;
