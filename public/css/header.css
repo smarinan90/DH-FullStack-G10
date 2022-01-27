@@ -1,11 +1,19 @@
 /* HEADER */
 
+body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  width: 100%;
   position: relative;
   margin-bottom: 12px;
+  max-width: 1080px;
 }
 
 .main-logo {
@@ -93,7 +101,7 @@ header {
     margin: 12px 3%;
   }
   .main-logo {
-    width: 9%;
+    width: 7.5%;
   }
   .search-bar {
     width: 40%;
@@ -105,12 +113,9 @@ header {
 
 @media screen and (min-width: 992px) {
   .main-logo {
-    width: 7.5%;
+    width: 6%;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .main-logo {
-    width: 6%;
-  }
 }
