@@ -1,9 +1,6 @@
 main {
   display: flex;
-}
-
-main section {
-  margin-right: 12px;
+  flex-wrap: wrap;
 }
 
 li {
@@ -19,8 +16,9 @@ a {
 
 .artists-menu {
   display: none;
-  width: 100%;
-  font-size: var(--text-lg);
+  width: 165px;
+  font-size: var(--text-md);
+  margin-right: 12px;
 }
 
 .artist-picture {
@@ -32,5 +30,23 @@ a {
 @media screen and (min-width: 576px) {
   .artists-menu {
     display: block;
+  }
+
+  .artists-section {
+    width: 10%;
+    flex-grow: 1;
+    max-width: 900px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  main {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main-logo {
+    width: 6%;
   }
 }
