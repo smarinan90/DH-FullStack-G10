@@ -1,9 +1,9 @@
 [
     {
         "id": 1,
-        "artist-name" : "The Weeknd",
-        "artist-banner" : "/img/artists_banner/Weekend.png",
-        "artist-picture" : "/img/artists_img/Weekend.png",
+        "name" : "The Weeknd",
+        "banner" : "Weekend.png",
+        "artist-picture" : "Weekend.png",
         "description" : "Abel Makkonen Tesfaye (born February 16, 1990), known professionally as the Weeknd, is a Canadian singer-songwriter and record producer. Known for his sonic versatility and dark lyricism, Tesfaye's music explores escapism, romance, and melancholia, and is often inspired by personal experiences. ",
         "genre" : "Hip-hop",
         "albums": [{
@@ -49,9 +49,9 @@
     },
     {
         "id": 2,
-        "artist-name" : "Disclosure",
-        "artist-banner" : "/img/artists_banner/Disclosure.png",
-        "artist-picture" : "/img/artists_img/Disclosure.png",
+        "name" : "Disclosure",
+        "banner" : "Disclosure.png",
+        "artist-picture" : "Disclosure.png",
         "description" : "Disclosure is an English electronic music duo consisting of brothers Howard (born 11 May 1994) and Guy Lawrence (born 25 May 1991).  They grew up in Reigate, Surrey. ",
         "genre" : "Electronic",
         "albums": [{
@@ -81,9 +81,9 @@
     },
     {
         "id": 3,
-        "artist-name" : "Deadmau5",
-        "artist-banner" : "/img/artists_banner/Deadmau5.png",
-        "artist-picture" : "/img/artists_img/Deadmau5.png",
+        "name" : "Deadmau5",
+        "banner" : "Deadmau5.png",
+        "artist-picture" : "Deadmau5.png",
         "description" : "Joel Thomas Zimmerman (born January 5, 1981),[2] known professionally as Deadmau5 (stylized as deadmau5; pronounced 'dead-mouse'), is a Canadian electronic music producer, DJ, and musician.",
         "albums": [{
             "name": "Get Scraped",
