@@ -4,5 +4,8 @@ const { body } = require('express-validator');
 const userController = require('../controllers/userController');
 
 const validateCreateForm = [
-    body('')
+    body('first_name').notEmpty().withMessage('Complete el campo de nombre');
+    body('last_name').notEmpty().withMessage('Complete el campo de apellido');
+    body('email').isEmail().withMessage('Complete el campo con un correo valido');
+
 ];
