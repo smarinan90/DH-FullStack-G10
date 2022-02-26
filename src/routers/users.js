@@ -39,4 +39,5 @@ const validateCreateForm = [
 
 /* router.get('/', userController.home);
 router.get('/login', userController.login);
-router.get('/register', userController.register); */
+router.get('/register', userController.register);
+router.post('[noseguro]', validateCreateForm, [noseguro].[noseguro]) */
