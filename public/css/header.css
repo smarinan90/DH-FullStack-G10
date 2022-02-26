@@ -7,6 +7,12 @@ body {
 }
 
 header {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  padding: 0 3%;
+}
+.header-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -49,6 +55,7 @@ header {
   padding: 3px;
   background-color: var(--g1);
   color: var(--m1);
+  cursor: pointer;
 }
 
 .user-actions {
@@ -97,9 +104,6 @@ header {
 }
 
 @media screen and (min-width: 768px) {
-  body {
-    margin: 12px 3%;
-  }
   .main-logo {
     width: 7.5%;
   }

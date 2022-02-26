@@ -43,7 +43,7 @@ body {
   /* background-color: #1c1c2b;
   background-image: url("https://www.transparenttextures.com/patterns/binding-dark.png"); */
   color: var(--g1);
-  margin: 12px 5%;
+  margin-top: 12px;
 }
 
 .flex-row {
