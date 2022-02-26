@@ -7,36 +7,38 @@
             <br>
             <p class="titulo-register">Nombre Completo</p>
             <div>
+                <label for="nombreCompleto"></label>
                 <input class="input-register" type="text" name="nombreCompleto" id="name">
             </div>
            <br>
            <p class="titulo-register">E-mail</p>
-           <div>        
-               <input class="input-register" type="email" name="email" id="correo">
+           <div>
+                <label for="email"></label>     
+                <input class="input-register" type="email" name="email" id="correo">
            </div>
            <br>
            <p class="titulo-register">Fecha de Nacimiento</p>
            <div>
-               <input class="input-register" type="date" name="fechaNacimiento" id="fecha" value="mm/dd/aaaa">
+                <label for="fechaNacimiento"></label>  
+                <input class="input-register" type="date" name="fechaNacimiento" id="fecha" value="mm/dd/aaaa">
            </div>
-           <br>
-           <br>
-           <p class="titulo-register">User profile</p>
-           <br>
            <br>
            <p class="titulo-register">Contraseña</p>
            <div>
-               <input class="input-register" type="password" name="contrasena_1" id="ps_1">
+                <label for="contrasena_1"></label>
+                <input class="input-register" type="password" name="contrasena_1" id="ps_1">
            </div>
            <br>
            <p class="titulo-register">Confirmar Contraseña</p>
            <div>
-              <input class="input-register" type="password" name="contrasena_2" id="ps_2">
+                <label for="contrasena_2"></label>
+                <input class="input-register" type="password" name="contrasena_2" id="ps_2">
           </div>
           <br>
            <div>
                <button class="enviar-button-register" type="submit">Sign Up</button>
            </div>
+           <br>
            <p>Already a member?<a href="/src/views/client/login.ejs">Sign In</a></p> 
            <br>
         </form>
