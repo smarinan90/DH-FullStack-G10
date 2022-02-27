@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const { body } = require('express-validator');
 const multer = require('multer');
+const path = require('path');
 
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
@@ -48,6 +49,8 @@ const validateCreateForm = [
     .isLength({ min: 8, max: 12})
     .withMessage('La contraseña debe tener entre 8 y 12 caracteres')
 ];
+
+//router.post('[noseguro]', upload.single('pic'), [noseguro].[noseguro])
 
 //AQUI FALTA PONER LAS RUTAS
 /* router.get('/', userController.home);
