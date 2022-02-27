@@ -7,7 +7,7 @@ const adminController = require('../controllers/adminController');
 
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
-        cb(null, path.join(__dirname, '../public/products_images'))
+        cb(null, path.join(__dirname, '../public/img/products_images'))
     },
     filename: (req, file, cb) => {
         cb(null, 'product-' + Date.now() + path.extname('file'))
