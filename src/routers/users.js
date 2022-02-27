@@ -1,6 +1,19 @@
 const express = require('express');
 const router = express.Router();
 const { body } = require('express-validator');
+const multer = require('multer');
+
+const storage = multer.diskStorage({
+    destination: (req, file, cb) => {
+        cb(null, path.join(__dirname, '../public/img/users'))
+    },
+    filename: (req, file, cb) => {
+        cb(null, 'product-' + Date.now() + path.extname('file'))
+    }
+})
+
+const upload = multer({ storage })
+
 
 const userController = require('../controllers/userController');
 
@@ -36,7 +49,7 @@ const validateCreateForm = [
     .withMessage('La contraseña debe tener entre 8 y 12 caracteres')
 ];
 
-
+//AQUI FALTA PONER LAS RUTAS
 /* router.get('/', userController.home);
 router.get('/login', userController.login);
 router.get('/register', userController.register);
