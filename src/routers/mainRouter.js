@@ -44,7 +44,7 @@ const validator = [
 
 router.get('/', mainController.home);
 router.get('/register', mainController.register);
-router.post('/register', validator, mainController.createUser);
+router.post('/register', mainController.createUser);
 router.get('/login', mainController.login);
 // router.post('/artist', mainController.)
 
