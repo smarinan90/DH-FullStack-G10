@@ -1,91 +1,58 @@
 <%-include('../partials/head')%>
 <body>
-  <%-include('../partials/header')%>
-  <main class="main-login">
-    <form
-      action="/src/views/client/register.ejs"
-      method="POST"
-      class="formulario"
-      enctype="multipart/form-data"
-    >
-      <br />
-      <br />
-      <p class="titulo-register">Nombre Completo</p>
-      <div>
-        <input
-          class="input-register"
-          type="text"
-          name="nombreCompleto"
-          id="name"
-        />
-      </div>
-      <br />
-      <p class="titulo-register">Nombre de usuari@</p>
-      <div>
-        <input
-          class="input-register"
-          type="text"
-          name="nombreUsuario"
-          id="userName"
-        />
-      </div>
-      <br />
-      <p class="titulo-register">E-mail</p>
-      <div>
-        <input class="input-register" type="email" name="email" id="correo" />
-      </div>
-      <br />
-      <p class="titulo-register">Fecha de Nacimiento</p>
-      <div>
-        <input
-          class="input-register"
-          type="date"
-          name="fechaNacimiento"
-          id="fecha"
-          value="mm/dd/aaaa"
-        />
-      </div>
-      <br />
-      <br />
-      <p class="titulo-register">User profile</p>
-      <br />
-      <div>
-        <input type="checkbox" name="userProfile" value="Admin" />
-        <label class="titulo-option" for="buy">Admin</label>
-      </div>
-      <br />
-      <br />
-      <p class="titulo-register">Contraseña</p>
-      <div>
-        <input
-          class="input-register"
-          type="password"
-          name="contrasena_1"
-          id="ps_1"
-        />
-      </div>
-      <br />
-      <p class="titulo-register">Confirmar Contraseña</p>
-      <div>
-        <input
-          class="input-register"
-          type="password"
-          name="contrasena_2"
-          id="ps_2"
-        />
-      </div>
-      <br />
-      <div class="register-button">
-        <button class="enviar-button-register" type="submit">Sign Up</button>
-      </div>
-      <p>
-        Already a member?
-        <a class="register-redirect" href="/src/views/client/login.ejs"
-          >Sign In</a
-        >
-      </p>
-      <br />
-    </form>
-  </main>
-  <%- include('../partials/footer')%>
-</body>
+    <%-include('../partials/header')%>
+    <main class="main-login">
+        <form action="/src/views/client/register.ejs" method="POST" class="formulario" enctype="multipart/form-data">
+            <br>
+            <br>
+            <p class="titulo-register">Nombre</p>
+            <div>
+                <label for="first_name"></label>
+                <input class="input-register" type="text" name="first_name" id="fName">
+            </div>
+            <br>
+            <p class="titulo-register">Apellido</p>
+            <div>
+                <label for="last_name"></label>
+                <input class="input-register" type="text" name="last_name" id="lName">
+            </div>
+           <br>
+           <p class="titulo-register">E-mail</p>
+           <div>
+                <label for="email"></label>     
+                <input class="input-register" type="email" name="email" id="correo">
+           </div>
+           <br>
+           <p class="titulo-register">Fecha de Nacimiento</p>
+           <div>
+                <label for="fechaNacimiento"></label>  
+                <input class="input-register" type="date" name="fechaNacimiento" id="fecha" value="mm/dd/aaaa">
+           </div>
+           <br>
+           <p class="titulo-register">Foto de perfil</p>
+           <div>
+                <label for="pic"></label>
+                <input class="input-register" type="file" name="pic" id="pic" accept="image/png, image/jpeg">
+           </div>
+           <br>
+           <p class="titulo-register">Contraseña</p>
+           <div>
+                <label for="contrasena_1"></label>
+                <input class="input-register" type="password" name="contrasena_1" id="ps_1">
+           </div>
+           <br>
+           <p class="titulo-register">Confirmar Contraseña</p>
+           <div>
+                <label for="contrasena_2"></label>
+                <input class="input-register" type="password" name="contrasena_2" id="ps_2">
+          </div>
+          <br>
+           <div>
+               <button class="enviar-button-register" type="submit">Sign Up</button>
+           </div>
+           <br>
+           <p>Already a member?<a href="/src/views/client/login.ejs">Sign In</a></p> 
+           <br>
+        </form>
+        </main>
+<%- include('../partials/footer')%>
