@@ -13,23 +13,30 @@ module.exports = {
         res.render('client/register');
     },
     createUser: (req, res) => {
-        const valResult = validationResult(req);
+        newUser = {
+            id: users[users.length - 1].id + 1,
+            ...req.body
+        };
+        users.push(newUser)
+        fs.writeFileSync(usersPath, JSON.stringify(users, null, ' '));
 
-        if (valResult.errors.length > 0) {
-            return res.render('client/register', {
-                errors: valResult.mapped(),
-                oldData: req.body
-            });
-        } else {
-            console.log(req.body);
-            let newUser = {
-                id: users[users.length - 1].id + 1,
-                ...req.body
-            };
-            users.push(newUser)
-            fs.writeFileSync(usersPath, JSON.stringify(users, null, ' '));
-            res.redirect('/login');
-        }
+
+        // const valResult = validationResult(req);
+
+        // if (!valResult.errors) {
+        //     return res.render('client/register', {
+        //         errors: valResult.mapped(),
+        //         oldData: req.body
+        //     });
+        // } else {
+        //     let newUser = {
+        //         id: users[users.length - 1].id + 1,
+        //         ...req.body
+        //     };
+        //     users.push(newUser)
+        //     fs.writeFileSync(usersPath, JSON.stringify(users, null, ' '));
+        //     res.redirect('/')
+        // }
     },
     login: (req, res) => {
         res.render('client/login');

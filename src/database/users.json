@@ -10,20 +10,74 @@
  },
  {
   "id": 2,
-  "first_name": "Daniel",
-  "last_name": "Amaya",
-  "email": "dani@gmai.com",
-  "birth_date": "2022-02-01",
-  "password": "123456789",
-  "confirmation_pwd": "123456789"
+  "first_name": "Santiago",
+  "last_name": "Marin",
+  "email": "dani@gmail.com",
+  "birth_date": "2022-02-09",
+  "password": "",
+  "confirmation_pwd": ""
  },
  {
   "id": 3,
-  "first_name": "Daniel",
-  "last_name": "Amaya",
-  "email": "dani@gmai.com",
-  "birth_date": "2022-02-01",
-  "password": "123456789",
-  "confirmation_pwd": "123456789"
+  "first_name": "Santiago",
+  "last_name": "Marin",
+  "email": "dani@gmail.com",
+  "birth_date": "2022-02-09",
+  "password": "",
+  "confirmation_pwd": ""
+ },
+ {
+  "id": 4,
+  "first_name": "Santiago",
+  "last_name": "Marin",
+  "email": "dani@gmail.com",
+  "birth_date": "2022-02-09",
+  "password": "",
+  "confirmation_pwd": ""
+ },
+ {
+  "id": 5,
+  "first_name": "Santiago",
+  "last_name": "Marin",
+  "email": "dani@gmail.com",
+  "birth_date": "2022-02-09",
+  "password": "",
+  "confirmation_pwd": ""
+ },
+ {
+  "id": 6,
+  "first_name": "Santiago",
+  "last_name": "Marin",
+  "email": "dani@gmail.com",
+  "birth_date": "2022-02-09",
+  "password": "",
+  "confirmation_pwd": ""
+ },
+ {
+  "id": 7,
+  "first_name": "Santiago",
+  "last_name": "Marin",
+  "email": "dani@gmail.com",
+  "birth_date": "2022-02-09",
+  "password": "",
+  "confirmation_pwd": ""
+ },
+ {
+  "id": 8,
+  "first_name": "Santiago",
+  "last_name": "Marin",
+  "email": "dani@gmail.com",
+  "birth_date": "2022-02-09",
+  "password": "",
+  "confirmation_pwd": ""
+ },
+ {
+  "id": 9,
+  "first_name": "Santiago",
+  "last_name": "Marin",
+  "email": "dani@gmail.com",
+  "birth_date": "2022-02-09",
+  "password": "",
+  "confirmation_pwd": ""
  }
 ]
