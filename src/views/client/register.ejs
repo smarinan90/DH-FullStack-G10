@@ -3,7 +3,7 @@
     <body>
         <%- include('../partials/header')%>
             <main class="main-login">
-                <form action="/src/views/client/register.ejs" method="POST" class="formulario">
+                <form action="/register" method="POST" class="formulario">
                     <p class="titulo-register">Nombre</p>
                     <div>
                         <label for="first_name"></label>
@@ -44,7 +44,7 @@
                         <button class="enviar-button-register" type="submit">Sign Up</button>
                     </div>
                     <br>
-                    <p>Already a member? <a href="/src/views/client/login.ejs"> Sign In </a></p>
+                    <p>Already a member? <a href="/login"> Sign In </a></p>
                     <br>
                 </form>
             </main>
