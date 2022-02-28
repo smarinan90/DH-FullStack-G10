@@ -1,48 +1,51 @@
-<%-include('partials/head')%>
-<body>
-  <%-include('partials/header')%>
-  <!-- div that contains the hero section -->
-  <div class="home-hero">
-    <div class="hero">
-      <picture class="hero-image">
-        <img src="/img/home_img/turntable.jpg" alt="Turntable image">
-      </picture>
-      <section class="hero-info">
-      <p class="hero-text">Invisible Records is the largest source for discovering new artists everyday, we work to give you new and exciting oportunities to experience new music and new albums. <br>
-      Jump in and start exploring albums you never knew you liked!
-      </p>
-      <div class="hero-button">
-      <a href="/register">Sign Up</a>
-      </div>
-      </section>
-    </div>
-  </div>
-  <div class="info-section">
-  <div class="info-section-1">
-    <section class="info-subsection1">
-    <h2 class="info-section-title">Most listened Artists</h2>
-    <p class="info-section-description">Browse our library and find the most listened artists currently. Dive in and enjoy new music to add to your collection!</p>
-    <a class="cta-button" href="/products">Explore</a>
-  </section>
-    <div class="section1-image">
-    <picture class="hero-image">
-        <img class="info-subsection1-image" src="/img/home_img/microphone.jpg" alt="Microphone image">
-      </picture>
-    </div>
-  </div>
-  <div class="info-section-2">
-    <section class="info-subsection2">
-    <h2 class="info-section-title">Latest trends</h2>
-    <p class="info-section-description">Discover the latest trends in the music industry, upcoming artists, upcoming events and much more!</p>
-    <a class="cta-button"  href="/products">Discover</a></button>
-  </section>
-    <div class="section2-image">
-    <picture class="hero-image">
-        <img class="info-subsection2-image" src="/img/home_img/DJ-booth.jpg" alt="DJ booth image">
-      </picture>
+<%- include('./partials/head')%>
 
-  </div>
-  </div>
-  </div>
-  <%- include('partials/footer')%>
-  
+  <body>
+    <%- include('./partials/header')%>
+      <!-- div that contains the hero section -->
+      <div class="home-hero">
+        <div class="hero">
+          <picture class="hero-image">
+            <img src="/img/home_img/turntable.jpg" alt="Turntable image">
+          </picture>
+          <section class="hero-info">
+            <p class="hero-text">Invisible Records is the largest source for discovering new artists everyday, we work
+              to give you new and exciting oportunities to experience new music and new albums. <br>
+              Jump in and start exploring albums you never knew you liked!
+            </p>
+            <div class="hero-button">
+              <a href="/register">Sign Up</a>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="info-section">
+        <div class="info-section-1">
+          <section class="info-subsection1">
+            <h2 class="info-section-title">Most listened Artists</h2>
+            <p class="info-section-description">Browse our library and find the most listened artists currently. Dive in
+              and enjoy new music to add to your collection!</p>
+            <a class="cta-button" href="/products">Explore</a>
+          </section>
+          <div class="section1-image">
+            <picture class="hero-image">
+              <img class="info-subsection1-image" src="/img/home_img/microphone.jpg" alt="Microphone image">
+            </picture>
+          </div>
+        </div>
+        <div class="info-section-2">
+          <section class="info-subsection2">
+            <h2 class="info-section-title">Latest trends</h2>
+            <p class="info-section-description">Discover the latest trends in the music industry, upcoming artists,
+              upcoming events and much more!</p>
+            <a class="cta-button" href="/products">Discover</a></button>
+          </section>
+          <div class="section2-image">
+            <picture class="hero-image">
+              <img class="info-subsection2-image" src="/img/home_img/DJ-booth.jpg" alt="DJ booth image">
+            </picture>
+
+          </div>
+        </div>
+      </div>
+      <%- include('./partials/footer')%>

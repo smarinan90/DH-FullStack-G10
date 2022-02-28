@@ -7,7 +7,7 @@ const users = JSON.parse(fs.readFileSync(usersPath, 'utf8'));
 
 module.exports = {
     home: (req, res) => {
-        res.render('/');
+        res.render('home');
     },
     register: (req, res) => {
         res.render('client/register');
@@ -19,7 +19,6 @@ module.exports = {
         };
         users.push(newUser)
         fs.writeFileSync(usersPath, JSON.stringify(users, null, ' '));
-
 
         // const valResult = validationResult(req);
 
