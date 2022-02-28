@@ -8,6 +8,7 @@
 .hero {
   position: relative;
   max-width: 1080px;
+  overflow: hidden;
 }
 
 .hero > picture > img {
@@ -31,7 +32,7 @@
 }
 .hero-button > a {
   background-color: var(--btn);
-  padding: 1.5rem 4rem;
+  padding: 1.2rem 4rem;
   border-radius: 2rem;
   font-size: var(--text-md);
   color: white;
@@ -39,19 +40,16 @@
 
 .hero-text {
   text-align: center;
-  line-height: 2.5rem;
+  line-height: 2rem;
+  padding: 1rem 2rem;
 }
 div > div > section > h2 {
   font-size: var(--title);
   padding: 1rem 2rem;
 }
 div > div > section > p {
-  font-size: var(--text-md);
+  font-size: var(--text-sm);
   padding: 1rem 2rem;
-}
-
-.hero-text {
-  padding: 1rem 9rem;
 }
 
 .info-section-1,
@@ -95,6 +93,12 @@ div > div > section > p {
 }
 
 @media screen and (min-width: 992px) {
+  .hero-text {
+    padding: 1rem 9rem;
+    line-height: 2.5rem;
+    font-size: var(--text-md);
+  }
+
   .info-section-1 {
     display: flex;
     flex-direction: row;

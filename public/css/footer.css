@@ -62,3 +62,10 @@ footer > div > div > div > section > a > p {
   display: flex;
   justify-content: center;
 }
+
+@media screen and (min-width: 992px) {
+  .social-media,
+  .footer-nav-menu {
+    font-size: var(--text-md);
+  }
+}

@@ -1,8 +1,9 @@
-.enviar-button-register {
+.enviar-button-register,
+.enviar-button {
   background-color: var(--btn);
   padding: 1.2rem 4rem;
   border-radius: 2rem;
-  font-size: var(--text-md);
+  font-size: var(--text-sm);
   color: white;
   border: none;
   margin-bottom: 1rem;
@@ -17,4 +18,10 @@
 .register-redirect {
   text-decoration: underline;
   color: white;
+}
+
+@media screen and (min-width: 992px) {
+  .enviar-button-register {
+    font-size: var(--text-md);
+  }
 }
