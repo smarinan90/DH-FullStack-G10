@@ -1,0 +1,112 @@
+.home-hero {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5rem;
+}
+
+.hero {
+  position: relative;
+  max-width: 1080px;
+}
+
+.hero > picture > img {
+  opacity: 0.2;
+  display: block;
+  max-width: 1080px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.hero > section {
+  position: absolute;
+  bottom: 1rem;
+  color: white;
+}
+
+.hero-button {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+.hero-button > a {
+  background-color: var(--btn);
+  padding: 1.5rem 4rem;
+  border-radius: 2rem;
+  font-size: var(--text-md);
+  color: white;
+}
+
+.hero-text {
+  text-align: center;
+  line-height: 2.5rem;
+}
+div > div > section > h2 {
+  font-size: var(--title);
+  padding: 1rem 2rem;
+}
+div > div > section > p {
+  font-size: var(--text-md);
+  padding: 1rem 2rem;
+}
+
+.hero-text {
+  padding: 1rem 9rem;
+}
+
+.info-section-1,
+.info-section-2 {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+}
+
+.info-subsection1,
+.info-subsection2 {
+  text-align: center;
+}
+
+.section1-image,
+.section2-image {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.info-subsection1-image,
+.info-subsection2-image {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.info-section-description {
+  margin-bottom: 1.2rem;
+}
+
+.cta-button {
+  background-color: var(--btn);
+  padding: 1.2rem 4rem;
+  border-radius: 2rem;
+  font-size: var(--text-md);
+  color: white;
+}
+
+@media screen and (min-width: 992px) {
+  .info-section-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .info-section-2 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .info-section-1 > section,
+  .info-section-2 > section {
+    width: 50%;
+  }
+}
