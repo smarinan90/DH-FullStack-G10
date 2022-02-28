@@ -3,7 +3,7 @@ main {
   flex-wrap: wrap;
 }
 
-li {
+.menu-list li {
   border-bottom: solid var(--g1) 1.5px;
   padding: 12px;
   list-style-type: none;
