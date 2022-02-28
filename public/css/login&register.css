@@ -1,0 +1,20 @@
+.enviar-button-register {
+  background-color: var(--btn);
+  padding: 1.2rem 4rem;
+  border-radius: 2rem;
+  font-size: var(--text-md);
+  color: white;
+  border: none;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.register-button {
+  display: flex;
+  justify-content: center;
+}
+
+.register-redirect {
+  text-decoration: underline;
+  color: white;
+}

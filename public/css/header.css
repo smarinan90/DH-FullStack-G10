@@ -76,6 +76,7 @@ header {
   bottom: -296px;
   transition: visibility 0.3s ease;
   visibility: collapse;
+  z-index: 10;
 }
 
 .menu-list ul {
