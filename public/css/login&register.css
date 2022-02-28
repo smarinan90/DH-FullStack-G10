@@ -1,4 +1,5 @@
-.enviar-button-register {
+.enviar-button-register,
+.enviar-button {
   background-color: var(--btn);
   padding: 1.2rem 4rem;
   border-radius: 2rem;
