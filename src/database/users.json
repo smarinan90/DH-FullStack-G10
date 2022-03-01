@@ -7,59 +7,5 @@
   "birth_date": "2022-02-01",
   "password": "1234567890",
   "confirmation_pwd": "1234567890"
- },
- {
-  "id": 2,
-  "first_name": "Daniel",
-  "last_name": "Amaya",
-  "email": "dani@gmail.com",
-  "birth_date": "2022-02-16",
-  "password": "123456789",
-  "confirmation_pwd": "123456789"
- },
- {
-  "id": 3,
-  "first_name": "Pepe",
-  "last_name": "Grillo",
-  "email": "123@gmail.com",
-  "birth_date": "1852-12-25",
-  "password": "123456789",
-  "confirmation_pwd": "123456789"
- },
- {
-  "id": 4,
-  "first_name": "Pepe",
-  "last_name": "Grillo",
-  "email": "123@gmail.com",
-  "birth_date": "1852-12-25",
-  "password": "123456789",
-  "confirmation_pwd": "123456789"
- },
- {
-  "id": 5,
-  "first_name": "Daniel",
-  "last_name": "Amaya",
-  "email": "dani@gmail.com",
-  "birth_date": "2022-02-16",
-  "password": "123456789",
-  "confirmation_pwd": "12365465798"
- },
- {
-  "id": 6,
-  "first_name": "Pepe",
-  "last_name": "Grillo",
-  "email": "123@gmail.com",
-  "birth_date": "1215-12-12",
-  "password": "123456789",
-  "confirmation_pwd": "123456798"
- },
- {
-  "id": 7,
-  "first_name": "Pepe",
-  "last_name": "Grillo",
-  "email": "pepe@gmail.com",
-  "birth_date": "1988-12-12",
-  "password": "123456789",
-  "confirmation_pwd": "132456789"
  }
 ]
