@@ -22,7 +22,7 @@ app.use(express.static(publicPath));
 
 app.use(methodOverride('_method'));
 app.use(express.urlencoded({ extended: false }));
-app.use(session({ secret: 'IVR, secret', resave: true, saveUninitialized: true }));
+app.use(session({ secret: 'IVR, secret', resave: false, saveUninitialized: false }));
 app.use(cookieParser());
 app.use(express.json());
 
