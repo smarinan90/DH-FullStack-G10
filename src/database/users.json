@@ -1,11 +1,65 @@
 [
-    {
-        "id": 1,
-        "first_name": "Santiago",
-        "last_name": "Marin",
-        "email": "smarinan90@gmail.com",
-        "birth_date": "2022-02-01",
-        "password": "1234567890",
-        "confirmation_pwd": "1234567890"
-    }
+ {
+  "id": 1,
+  "first_name": "Santiago",
+  "last_name": "Marin",
+  "email": "smarinan90@gmail.com",
+  "birth_date": "2022-02-01",
+  "password": "1234567890",
+  "confirmation_pwd": "1234567890"
+ },
+ {
+  "id": 2,
+  "first_name": "pepe",
+  "last_name": "grillo",
+  "email": "guaca@gmail.com",
+  "birth_date": "2019-03-29",
+  "password": "12345",
+  "confirmation_pwd": "12345"
+ },
+ {
+  "id": 3,
+  "first_name": "papa",
+  "last_name": "quemada",
+  "email": "123@gmail.com",
+  "birth_date": "2016-12-29",
+  "password": "123456",
+  "confirmation_pwd": "123456"
+ },
+ {
+  "id": 4,
+  "first_name": "hola",
+  "last_name": "chao",
+  "email": "juaco@gmail.com",
+  "birth_date": "2016-06-26",
+  "password": "123456",
+  "confirmation_pwd": "123456"
+ },
+ {
+  "id": 5,
+  "first_name": "paco",
+  "last_name": "luis",
+  "email": "pacoluis@gmail.com",
+  "birth_date": "2015-01-25",
+  "password": "12345678",
+  "confirmation_pwd": "12345678"
+ },
+ {
+  "id": 6,
+  "first_name": "aguacate",
+  "last_name": "papilla",
+  "email": "sdfgsdjk@gmail.com",
+  "birth_date": "2011-07-24",
+  "password": "123456789",
+  "confirmation_pwd": "123456789"
+ },
+ {
+  "id": 7,
+  "first_name": "ola",
+  "last_name": "amigos",
+  "email": "gmail@gmail.com",
+  "birth_date": "2012-01-17",
+  "password": "12345",
+  "confirmation_pwd": "12345"
+ }
 ]
