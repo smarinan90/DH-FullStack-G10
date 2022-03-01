@@ -1,11 +1,9 @@
 [
  {
-  "id": 1,
   "first_name": "Santiago",
   "last_name": "Marin",
-  "email": "smarinan90@gmail.com",
-  "birth_date": "2022-02-01",
-  "password": "1234567890",
-  "confirmation_pwd": "1234567890"
+  "email": "dani@gmai.com",
+  "birth_date": "1990-12-12",
+  "password": "$2a$09$Gmkt6PipflSJfyoXcyeQZuCfE2VQ4rug5sEcQDLm6mhP3UvQiGupS"
  }
 ]

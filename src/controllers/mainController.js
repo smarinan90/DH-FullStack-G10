@@ -1,10 +1,9 @@
-const fs = require("fs");
-const path = require("path");
-const bcryptjs = require('bcryptjs');
 const { validationResult } = require("express-validator");
-const Users = requiere('usersPath')
+const path = require("path");
+const usersMethods = path.resolve(__dirname, "../../models/Users.js");
+const CRUD = require(usersMethods);
+const bcryptjs = require('bcryptjs');
 
-const usersPath = path.resolve(__dirname, "../database/users.json");
 
 module.exports = {
   home: (req, res) => {
@@ -22,30 +21,41 @@ module.exports = {
       return res.render("client/register", {
         errors: valResult.mapped(),
         oldData: req.body,
-      });
+      }); 
     } else {
-      const { first_name, last_name, email, birth_date, password, confirmation_pwd } = req.body;
 
-      let newUser = {
-        id: users[users.length - 1].id + 1,
+      let { first_name, last_name, email, birth_date, password, confirmation_pwd } = req.body;
+      let pwd = bcryptjs.hashSync(password, 9);
+      let mailVerification = CRUD.findByEmail(email);
+
+      mailVerification ? res.render("client/register", {
+        errors: {
+          email: {
+            msg: 'El usuario ya se encuentra registrado'
+          }
+        },
+        oldData: req.body,
+      }) : null;
+
+      newUser = {
         first_name,
         last_name,
         email,
         birth_date,
-        password: bcryptjs.hashSync(password, 9)
-      };
+        password: pwd
+      } 
 
-      if (bcryptjs.compareSync(confirmation_pwd, newUser.password)) {
-        users.push(newUser);
-        fs.writeFileSync(usersPath, JSON.stringify(users, null, " "));
-        res.redirect("/login");
-      } else {
-        return res.render("client/register", {
-          // errors: ??? ,
-          oldData: req.body,
-        })
-      }
+      bcryptjs.compareSync(confirmation_pwd, pwd) ? CRUD.create(newUser) : res.render("client/register", {
+        errors: {
+          email: {
+            msg: 'Hay un error en la informacion'
+          }
+        },
+        oldData: req.body,
+      }) 
     }
+
+    res.redirect("/login");
   },
 
   login: (req, res) => {

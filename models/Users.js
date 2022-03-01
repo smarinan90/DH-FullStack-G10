@@ -1,43 +1,51 @@
 const fs = require('fs');
+const path = require('path');
+const { monitorEventLoopDelay } = require('perf_hooks');
+const usersDB = path.join(__dirname, "../src/database/users.json")
+
+const findAll = () => {
+    return JSON.parse(fs.readFileSync(usersDB, 'utf8'));
+};
+
+const idGenerator = () => {
+    let allUsers = findAll();
+    let last = allUsers.pop()
+    if(last){
+       var newId = last.id + 1;
+    } else {
+        id = 1;
+    }
+    return newId
+};
 
 module.exports = {
-    fileName: '../database/users',
-
-    idGenerator: () => {
-        let allUsers = this.findAll();
-        let last = allUsers.pop() ? last.id + 1 : 1;
-        return last
-    },
-
-    findAll: () => {
-        return JSON.parse(fs.readFileSync(this.fileName, 'utf8'))
-    },
 
     findByPk: (id) => {
-        let allUsers = this.findAll();
+        let allUsers = findAll();
         let toFind = allUsers.find(u => u.id === id);
         return toFind;
     },
 
     findByEmail: (e) => {
-        let allUsers = this.findAll();
+        let allUsers = findAll();
         let toFind = allUsers.find(u => u.email === e);
         return toFind;
     },
 
     create: (data) => {
-        let allUsers = this.findAll();
+        let allUsers = findAll();
         let newUser = {
-            id: this.idGenerator(),
+            id: idGenerator(),
             ...data
         }
         allUsers.push(newUser);
-        fs.writeFileSync(this.fileName, JSON.stringify(allUsers, null, ' '));
+        fs.writeFileSync(usersDB, JSON.stringify(allUsers, null, ' '));
+        return newUser;
     },
 
     delete: (id) => {
-        let allUsers = this.findAll();
+        let allUsers = findAll();
         let users = allUsers.filter(u => u.id !== id)
-        fs.writeFileSync(this.fileName, JSON.stringify(users, null, ' '));
+        fs.writeFileSync(usersDB, JSON.stringify(users, null, ' '));
     }
 }
