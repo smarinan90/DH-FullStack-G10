@@ -1,5 +1,17 @@
-<%-include('../partials/head')%>
+<%- include('../partials/head')%>
 <body>
-    <%-include('../partials/header')%>
-    <h1>Hola</h1>
+  <%- include('../partials/header')%>
+  <h1>Single product page</h1>
+  <section class="artists-section">
+    <%= product.name %>
+    <picture class="artist-card">
+      <a href="/products/<%= product.id%>"
+        ><img
+          src="/img/artists_banner/<%= product.banner %>"
+          alt="<%= product.name%>"
+          class="artist-picture"
+      /></a>
+    </picture>
+  </section>
+</body>
 <%- include('../partials/footer')%>

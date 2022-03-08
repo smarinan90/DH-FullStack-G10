@@ -1,6 +1,7 @@
 main {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .menu-list li {
