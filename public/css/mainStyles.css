@@ -52,7 +52,11 @@ body {
   justify-content: center;
   flex-wrap: wrap;
 }
-
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .flex-row {
   display: flex;
   flex-wrap: wrap;

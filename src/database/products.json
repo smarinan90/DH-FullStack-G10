@@ -8,40 +8,45 @@
     "genre": "Hip-hop",
     "albums": [
       {
+        "idAlbum": 1,
         "name": "Kiss Land",
-        "album-cover": "/img/products_img/TheWeekend_KissLand.jpg",
+        "albumCover": "/img/products_img/TheWeeknd_KissLand.jpg",
         "release": "2013",
         "price": 78,
         "stock": 15,
         "discount": 0
       },
       {
+        "idAlbum": 2,
         "name": "Beauty Behind the Madness",
-        "album-cover": "/img/products_img/TheWeekend_BeautyBehindTheMadness.jpg",
+        "albumCover": "/img/products_img/TheWeeknd_BeautyBehindTheMadness.jpg",
         "release": "2015",
         "price": 91,
         "stock": 9,
         "discount": 0
       },
       {
+        "idAlbum": 3,
         "name": "Starboy",
-        "album-cover": "/img/products_img/TheWeekend_Starboy.jpg",
+        "albumCover": "/img/products_img/TheWeeknd_Starboy.jpg",
         "release": "2016",
         "price": 98,
         "stock": 30,
         "discount": 0
       },
       {
+        "idAlbum": 4,
         "name": "After Hours",
-        "album-cover": "/img/products_img/TheWeekend_AfterHours.jpg",
+        "albumCover": "/img/products_img/TheWeeknd_AfterHours.jpg",
         "release": "2020",
         "price": 86,
         "stock": 17,
         "discount": 0
       },
       {
+        "idAlbum": 5,
         "name": "Dawn FM",
-        "album-cover": "/img/products_img/TheWeekend_DawnFM.png",
+        "albumCover": "/img/products_img/TheWeeknd_DawnFM.png",
         "release": "2020",
         "price": 114,
         "stock": 45,
@@ -58,24 +63,27 @@
     "genre": "Electronic",
     "albums": [
       {
+        "idAlbum": 1,
         "name": "Settle",
-        "album-cover": "/img/products_img/Disclosure_Settle.jpg",
+        "albumCover": "/img/products_img/Disclosure_Settle.jpg",
         "release": "2013",
         "price": 56,
         "stock": 17,
         "discount": 0
       },
       {
+        "idAlbum": 2,
         "name": "Caracal",
-        "album-cover": "/img/products_img/Disclosure_Carcal.jpg",
+        "albumCover": "/img/products_img/Disclosure_Caracal.jpg",
         "release": "2015",
         "price": 64,
         "stock": 19,
         "discount": 0
       },
       {
+        "idAlbum": 3,
         "name": "Energy",
-        "album-cover": "/img/products_img/Disclosure_Energy.jpg",
+        "albumCover": "/img/products_img/Disclosure_Energy.jpg",
         "release": "2020",
         "price": 59,
         "stock": 12,
@@ -92,64 +100,72 @@
     "genre": "Electronic",
     "albums": [
       {
+        "idAlbum": 1,
         "name": "Get Scraped",
-        "album-cover": "/img/products_img/Deadmau5_GetScrapped.jpg",
+        "albumCover": "/img/products_img/Deadmau5_GetScraped.jpg",
         "release": "2005",
         "price": 56,
         "stock": 17,
         "discount": 0
       },
       {
+        "idAlbum": 2,
         "name": "Vexillology",
-        "album-cover": "/img/products_img/Deadmau5_Vexillology.jpg",
+        "albumCover": "/img/products_img/Deadmau5_Vexillology.jpg",
         "release": "2006",
         "price": 64,
         "stock": 19,
         "discount": 0
       },
       {
+        "idAlbum": 3,
         "name": "Random Album Title",
-        "album-cover": "/img/products_img/Deadmau5_RandomAlbumTitle.jpg",
+        "albumCover": "/img/products_img/Deadmau5_RandomAlbumTitle.jpg",
         "release": "2008",
         "price": 59,
         "stock": 12,
         "discount": 0
       },
       {
+        "idAlbum": 4,
         "name": "For Lack of a Better Name",
-        "album-cover": "/img/products_img/Deadmau5_ForLackOfBetterName.jpg",
+        "albumCover": "/img/products_img/Deadmau5_ForLackOfBetterName.jpg",
         "release": "2009",
         "price": 59,
         "stock": 12,
         "discount": 0
       },
       {
-        "name": "4×4=12 ",
-        "album-cover": "/img/products_img/Deadmau5_4412.jpg",
+        "idAlbum": 5,
+        "name": "4×4=12",
+        "albumCover": "/img/products_img/Deadmau5_4412.jpg",
         "release": "2010",
         "price": 59,
         "stock": 12,
         "discount": 0
       },
       {
+        "idAlbum": 6,
         "name": "Album Title Goes Here ",
-        "album-cover": "/img/products_img/Deadmau5_AlbumTitleGoesHere.jpg",
+        "albumCover": "/img/products_img/Deadmau5_AlbumTitleGoesHere.jpg",
         "release": "2012",
         "price": 59,
         "stock": 12,
         "discount": 0
       },
       {
+        "idAlbum": 7,
         "name": "While(1<2)",
-        "album-cover": "/img/products_img/Deadmau5_While12.jpg",
+        "albumCover": "/img/products_img/Deadmau5_While12.jpg",
         "release": "2014",
         "price": 59,
         "stock": 12,
         "discount": 0
       },
       {
+        "idAlbum": 8,
         "name": "W:/2016Album/",
-        "album-cover": "/img/products_img/Deadmau5_W2016Album.png",
+        "albumCover": "/img/products_img/Deadmau5_W2016Album.png",
         "release": "2016",
         "price": 59,
         "stock": 12,
