@@ -45,7 +45,7 @@ router.get("/", mainController.home);
 router.get("/register", mainController.register);
 router.post("/register", validator, mainController.createUser);
 router.get("/login", mainController.login);
-// router.post('/artist', mainController.)
+router.post("/login", mainController.loginProcess)
 
 // Export
 

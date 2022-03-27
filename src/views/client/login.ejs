@@ -4,22 +4,23 @@
     <%- include('../partials/header')%>
       <main class="main-login">
         <div class="login-form">
-          <form action="/src/views/client/login.ejs" method="POST" class="login" enctype="multipart/form-data">
-            <br />
-            <br />
+          <form action="/login" method="POST" class="login">
+            <br>
+            <br>
             <div>
-              <input class="nombreUsuario" type="text" name="nombreUsuario" id="userName"
-                placeholder="Nombre de Usuario" />
+              <input class="login-input" type="text" name="email" id="email"
+                placeholder="Nombre de Usuario">
             </div>
-            <br />
+            <br>
             <div>
-              <input class="contrasena" type="password" name="contrasena" id="ps" placeholder="Contraseña" />
+              <input class="login-input" type="password" name="password" id="password" placeholder="Contraseña">
             </div>
+            <br>
             <div>
-              <input id="buy" type="checkbox" name="userProfile" value="Admin" />
+              <input id="buy" type="checkbox" name="userProfile">
               <label name="userProfile" class="titulo-option" for="buy">Remember me</label>
             </div>
-            <br />
+            <br>
             <div>
               <button class="enviar-button" type="submit">Sign In</button>
             </div>
