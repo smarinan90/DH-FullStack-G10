@@ -1,11 +1,4 @@
 /* HEADER */
-
-body {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
 header {
   width: 100%;
   justify-content: center;
