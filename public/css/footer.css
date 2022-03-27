@@ -5,7 +5,7 @@ footer {
   justify-content: center;
   padding: 0 3%;
   font-size: var(--text-sm);
-  margin-top: 2rem;
+  margin-top: auto;
 }
 
 .footer-content {
@@ -63,6 +63,10 @@ footer > div > div > div > section > a > p {
   justify-content: center;
 }
 
+.footer-copyright {
+  display: flex;
+  justify-content: center;
+}
 @media screen and (min-width: 992px) {
   .social-media,
   .footer-nav-menu {

@@ -1,5 +1,10 @@
-<%-include('partials/head')%>
+<%-include('./partials/head')%>
 <body>
-    <%-include('partials/header')%>
-    <h1>Error 404: Not found</h1>
-<%- include('partials/footer')%>
+  <%-include('./partials/header')%>
+  <main>
+    <div class="error404" style="display: flex; justify-content: center">
+      <h1>Error 404: Not found</h1>
+    </div>
+  </main>
+  <%- include('./partials/footer')%>
+</body>

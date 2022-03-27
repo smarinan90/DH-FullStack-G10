@@ -1,0 +1,66 @@
+.album-picture {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+}
+
+.albumProductCard {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: fit-content;
+  padding: 2rem 0;
+  max-width: 1080px;
+}
+
+.album-section > h1 {
+  text-align: center;
+  text-transform: capitalize;
+  max-width: 200px;
+}
+
+.albumProductContent {
+  padding: 1rem 0;
+}
+.albumProductContent > h3 {
+  padding-bottom: 1rem;
+}
+
+.CTA {
+  background-color: var(--btn);
+  padding: 1.2rem 4rem;
+  border-radius: 2rem;
+  font-size: var(--text-sm);
+  color: white;
+  border: none;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 600px) {
+  .album-picture {
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+  }
+  .albumProductContent > h3 {
+    font-size: 1.5rem;
+  }
+  .album-section > h1 {
+    max-width: 100%;
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 900px) {
+  .album-picture {
+    height: 600px;
+    width: 600px;
+    object-fit: cover;
+  }
+  .albumProductContent > h3 {
+    font-size: 2rem;
+  }
+  .album-section > h1 {
+    font-size: 3rem;
+  }
+}

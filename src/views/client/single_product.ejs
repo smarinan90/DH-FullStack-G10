@@ -1,5 +1,33 @@
-<%-include('../partials/head')%>
+<%- include('../partials/head')%>
 <body>
-    <%-include('../partials/header')%>
-    <h1>Hola</h1>
+  <%- include('../partials/header')%>
+  <main>
+    <section class="album-section">
+      <h1 class="singleProductPageTitle">
+        Discover <%=product.name%>'s albums
+      </h1>
+      <% albums.forEach(album => { %>
+      <div class="albumProductCard">
+        <article class="albumProductContent">
+          <h3 class="albumName"><%= album.name %></h3>
+          <picture class="album-card">
+            <a href="#"
+              ><img
+                src="<%= album.albumCover %>"
+                alt="<%= album.name%>"
+                class="album-picture"
+            /></a>
+          </picture>
+        </article>
+        <button id="addToCart" class="CTA" type="submit">
+          Add to cart
+          <span class="iconify" data-icon="carbon:shopping-cart"></span>
+        </button>
+      </div>
+      <% }) %>
+    </section>
+  </main>
+  <script src="/js/addToCart.js"></script>
+  <script src="/js/isAdmin.js"></script>
+</body>
 <%- include('../partials/footer')%>

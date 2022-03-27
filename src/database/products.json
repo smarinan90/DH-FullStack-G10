@@ -1,153 +1,176 @@
 [
-    {
-        "id": 1,
-        "name" : "The Weeknd",
-        "banner" : "Weekend.png",
-        "artist-picture" : "Weekend.png",
-        "description" : "Abel Makkonen Tesfaye (born February 16, 1990), known professionally as the Weeknd, is a Canadian singer-songwriter and record producer. Known for his sonic versatility and dark lyricism, Tesfaye's music explores escapism, romance, and melancholia, and is often inspired by personal experiences. ",
-        "genre" : "Hip-hop",
-        "albums": [{
-            "name": "Kiss Land",
-            "album-cover": "/img/products_img/TheWeekend_KissLand.jpg",
-            "release" : "2013",
-            "price" : 78,
-            "stock" : 15,
-            "discount" : 0
-        },
-        {
-            "name": "Beauty Behind the Madness",
-            "album-cover": "/img/products_img/TheWeekend_BeautyBehindTheMadness.jpg",
-            "release" : "2015",
-            "price" : 91,
-            "stock" : 9,
-            "discount" : 0
-        },
-        {
-            "name": "Starboy",
-            "album-cover": "/img/products_img/TheWeekend_Starboy.jpg",
-            "release" : "2016",
-            "price" : 98,
-            "stock" : 30,
-            "discount" : 0
-        },
-        {
-            "name": "After Hours",
-            "album-cover": "/img/products_img/TheWeekend_AfterHours.jpg",
-            "release" : "2020",
-            "price" : 86,
-            "stock" : 17,
-            "discount" : 0
-        },
-        {
-            "name": "Dawn FM",
-            "album-cover": "/img/products_img/TheWeekend_DawnFM.png",
-            "release" : "2020",
-            "price" : 114,
-            "stock" : 45,
-            "discount" : 0
-        }]
-    },
-    {
-        "id": 2,
-        "name" : "Disclosure",
-        "banner" : "Disclosure.png",
-        "artist-picture" : "Disclosure.png",
-        "description" : "Disclosure is an English electronic music duo consisting of brothers Howard (born 11 May 1994) and Guy Lawrence (born 25 May 1991).  They grew up in Reigate, Surrey. ",
-        "genre" : "Electronic",
-        "albums": [{
-            "name": "Settle",
-            "album-cover": "/img/products_img/Disclosure_Settle.jpg",
-            "release" : "2013",
-            "price" : 56,
-            "stock" : 17,
-            "discount" : 0
-        },
-        {
-            "name": "Caracal",
-            "album-cover": "/img/products_img/Disclosure_Carcal.jpg",
-            "release" : "2015",
-            "price" : 64,
-            "stock" : 19,
-            "discount" : 0
-        },
-        {
-            "name": "Energy",
-            "album-cover": "/img/products_img/Disclosure_Energy.jpg",
-            "release" : "2020",
-            "price" : 59,
-            "stock" : 12,
-            "discount" : 0
-        }]
-    },
-    {
-        "id": 3,
-        "name" : "Deadmau5",
-        "banner" : "Deadmau5.png",
-        "artist-picture" : "Deadmau5.png",
-        "description" : "Joel Thomas Zimmerman (born January 5, 1981),[2] known professionally as Deadmau5 (stylized as deadmau5; pronounced 'dead-mouse'), is a Canadian electronic music producer, DJ, and musician.",
-        "albums": [{
-            "name": "Get Scraped",
-            "album-cover": "/img/products_img/Deadmau5_GetScrapped.jpg",
-            "release" : "2005",
-            "price" : 56,
-            "stock" : 17,
-            "discount" : 0
-        },
-        {
-            "name": "Vexillology",
-            "album-cover": "/img/products_img/Deadmau5_Vexillology.jpg",
-            "release" : "2006",
-            "price" : 64,
-            "stock" : 19,
-            "discount" : 0
-        },
-        {
-            "name": "Random Album Title",
-            "album-cover": "/img/products_img/Deadmau5_RandomAlbumTitle.jpg",
-            "release" : "2008",
-            "price" : 59,
-            "stock" : 12,
-            "discount" : 0
-        },
-        {
-            "name": "For Lack of a Better Name",
-            "album-cover": "/img/products_img/Deadmau5_ForLackOfBetterName.jpg",
-            "release" : "2009",
-            "price" : 59,
-            "stock" : 12,
-            "discount" : 0
-        },
-        {
-            "name": "4×4=12 ",
-            "album-cover": "/img/products_img/Deadmau5_4412.jpg",
-            "release" : "2010",
-            "price" : 59,
-            "stock" : 12,
-            "discount" : 0
-        },
-        {
-            "name": "Album Title Goes Here ",
-            "album-cover": "/img/products_img/Deadmau5_AlbumTitleGoesHere.jpg",
-            "release" : "2012",
-            "price" : 59,
-            "stock" : 12,
-            "discount" : 0
-        },
-        {
-            "name": "While(1<2)",
-            "album-cover": "/img/products_img/Deadmau5_While12.jpg",
-            "release" : "2014",
-            "price" : 59,
-            "stock" : 12,
-            "discount" : 0
-        },
-        {
-            "name": "W:/2016Album/",
-            "album-cover": "/img/products_img/Deadmau5_W2016Album.png",
-            "release" : "2016",
-            "price" : 59,
-            "stock" : 12,
-            "discount" : 0
-        }]
-    }
+  {
+    "id": 1,
+    "name": "The Weeknd",
+    "banner": "Weekend.png",
+    "artist-picture": "Weekend.png",
+    "description": "Abel Makkonen Tesfaye (born February 16, 1990), known professionally as the Weeknd, is a Canadian singer-songwriter and record producer. Known for his sonic versatility and dark lyricism, Tesfaye's music explores escapism, romance, and melancholia, and is often inspired by personal experiences. ",
+    "genre": "Hip-hop",
+    "albums": [
+      {
+        "idAlbum": 1,
+        "name": "Kiss Land",
+        "albumCover": "/img/products_img/TheWeeknd_KissLand.jpg",
+        "release": "2013",
+        "price": 78,
+        "stock": 15,
+        "discount": 0
+      },
+      {
+        "idAlbum": 2,
+        "name": "Beauty Behind the Madness",
+        "albumCover": "/img/products_img/TheWeeknd_BeautyBehindTheMadness.jpg",
+        "release": "2015",
+        "price": 91,
+        "stock": 9,
+        "discount": 0
+      },
+      {
+        "idAlbum": 3,
+        "name": "Starboy",
+        "albumCover": "/img/products_img/TheWeeknd_Starboy.jpg",
+        "release": "2016",
+        "price": 98,
+        "stock": 30,
+        "discount": 0
+      },
+      {
+        "idAlbum": 4,
+        "name": "After Hours",
+        "albumCover": "/img/products_img/TheWeeknd_AfterHours.jpg",
+        "release": "2020",
+        "price": 86,
+        "stock": 17,
+        "discount": 0
+      },
+      {
+        "idAlbum": 5,
+        "name": "Dawn FM",
+        "albumCover": "/img/products_img/TheWeeknd_DawnFM.png",
+        "release": "2020",
+        "price": 114,
+        "stock": 45,
+        "discount": 0
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Disclosure",
+    "banner": "Disclosure.png",
+    "artist-picture": "Disclosure.png",
+    "description": "Disclosure is an English electronic music duo consisting of brothers Howard (born 11 May 1994) and Guy Lawrence (born 25 May 1991).  They grew up in Reigate, Surrey. ",
+    "genre": "Electronic",
+    "albums": [
+      {
+        "idAlbum": 1,
+        "name": "Settle",
+        "albumCover": "/img/products_img/Disclosure_Settle.jpg",
+        "release": "2013",
+        "price": 56,
+        "stock": 17,
+        "discount": 0
+      },
+      {
+        "idAlbum": 2,
+        "name": "Caracal",
+        "albumCover": "/img/products_img/Disclosure_Caracal.jpg",
+        "release": "2015",
+        "price": 64,
+        "stock": 19,
+        "discount": 0
+      },
+      {
+        "idAlbum": 3,
+        "name": "Energy",
+        "albumCover": "/img/products_img/Disclosure_Energy.jpg",
+        "release": "2020",
+        "price": 59,
+        "stock": 12,
+        "discount": 0
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Deadmau5",
+    "banner": "Deadmau5.png",
+    "artist-picture": "Deadmau5.png",
+    "description": "Joel Thomas Zimmerman (born January 5, 1981),[2] known professionally as Deadmau5 (stylized as deadmau5; pronounced 'dead-mouse'), is a Canadian electronic music producer, DJ, and musician.",
+    "genre": "Electronic",
+    "albums": [
+      {
+        "idAlbum": 1,
+        "name": "Get Scraped",
+        "albumCover": "/img/products_img/Deadmau5_GetScraped.jpg",
+        "release": "2005",
+        "price": 56,
+        "stock": 17,
+        "discount": 0
+      },
+      {
+        "idAlbum": 2,
+        "name": "Vexillology",
+        "albumCover": "/img/products_img/Deadmau5_Vexillology.jpg",
+        "release": "2006",
+        "price": 64,
+        "stock": 19,
+        "discount": 0
+      },
+      {
+        "idAlbum": 3,
+        "name": "Random Album Title",
+        "albumCover": "/img/products_img/Deadmau5_RandomAlbumTitle.jpg",
+        "release": "2008",
+        "price": 59,
+        "stock": 12,
+        "discount": 0
+      },
+      {
+        "idAlbum": 4,
+        "name": "For Lack of a Better Name",
+        "albumCover": "/img/products_img/Deadmau5_ForLackOfBetterName.jpg",
+        "release": "2009",
+        "price": 59,
+        "stock": 12,
+        "discount": 0
+      },
+      {
+        "idAlbum": 5,
+        "name": "4×4=12",
+        "albumCover": "/img/products_img/Deadmau5_4412.jpg",
+        "release": "2010",
+        "price": 59,
+        "stock": 12,
+        "discount": 0
+      },
+      {
+        "idAlbum": 6,
+        "name": "Album Title Goes Here ",
+        "albumCover": "/img/products_img/Deadmau5_AlbumTitleGoesHere.jpg",
+        "release": "2012",
+        "price": 59,
+        "stock": 12,
+        "discount": 0
+      },
+      {
+        "idAlbum": 7,
+        "name": "While(1<2)",
+        "albumCover": "/img/products_img/Deadmau5_While12.jpg",
+        "release": "2014",
+        "price": 59,
+        "stock": 12,
+        "discount": 0
+      },
+      {
+        "idAlbum": 8,
+        "name": "W:/2016Album/",
+        "albumCover": "/img/products_img/Deadmau5_W2016Album.png",
+        "release": "2016",
+        "price": 59,
+        "stock": 12,
+        "discount": 0
+      }
+    ]
+  }
 ]

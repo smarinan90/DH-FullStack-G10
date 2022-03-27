@@ -1,9 +1,10 @@
 [
- {
-  "first_name": "Santiago",
-  "last_name": "Marin",
-  "email": "dani@gmai.com",
-  "birth_date": "1990-12-12",
-  "password": "$2a$09$Gmkt6PipflSJfyoXcyeQZuCfE2VQ4rug5sEcQDLm6mhP3UvQiGupS"
- }
+  {
+    "first_name": "Santiago",
+    "last_name": "Marin",
+    "email": "dani@gmai.com",
+    "birth_date": "1990-12-12",
+    "password": "$2a$09$Gmkt6PipflSJfyoXcyeQZuCfE2VQ4rug5sEcQDLm6mhP3UvQiGupS",
+    "isAdmin": true
+  }
 ]
