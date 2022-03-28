@@ -26,7 +26,7 @@ CREATE TABLE `albums` (
    `release_date` DATE NOT NULL,
    `price` FLOAT NOT NULL,
    `stock` INT NOT NULL,
-   `discount` INT NOT NULL,
+   `discount` INT,
    `cover_image` VARCHAR(255) NOT NULL,
    PRIMARY KEY (`id`)
 );
