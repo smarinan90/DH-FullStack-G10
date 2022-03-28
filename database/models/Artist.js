@@ -29,6 +29,21 @@ module.exports = (sequelize, dataTypes) => {
         timestamps: false
     };
 
-    const User = sequelize.define(alias, cols, config);
-    return User
+    const Artist = sequelize.define(alias, cols, config);
+
+    Artist.associate = (models) => {
+        Artist.hasMany(models.Artist, {
+            as: "albums",
+            foreignKey: "artist_id"
+        });
+    };
+
+    Artist.associate = (models) => {
+        Artist.belongsTo(models.Artist, {
+            as: "genre",
+            foreignKey: "genre_id"
+        });
+    };
+
+    return Artist
 }
