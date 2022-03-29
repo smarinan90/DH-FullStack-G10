@@ -37,6 +37,21 @@
   cursor: pointer;
 }
 
+.album-price {
+  font-weight: 400;
+  justify-content: flex-end;
+}
+
+.albumInfo {
+  display: flex;
+}
+.albumInfo > * {
+  width: 50%;
+  display: flex;
+  padding: 1rem 0;
+  font-size: 1rem;
+}
+
 @media screen and (min-width: 600px) {
   .album-picture {
     height: 400px;
@@ -50,6 +65,9 @@
     max-width: 100%;
     font-size: 2rem;
   }
+  .albumInfo > * {
+    font-size: 1.5rem;
+  }
 }
 @media screen and (min-width: 900px) {
   .album-picture {
@@ -62,5 +80,11 @@
   }
   .album-section > h1 {
     font-size: 3rem;
+  }
+  .albumInfo > * {
+    font-size: 2rem;
+  }
+  .CTA {
+    font-size: 2rem;
   }
 }

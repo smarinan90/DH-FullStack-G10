@@ -1,9 +1,23 @@
-<%- include('../partials/head')%>
-
-    <body>
-        <%- include('../partials/header')%>
-            <h1>Hola</h1>
-            <%- include('../partials/footer')%>
-    </body>
-
-    </html>
+<%-include('../partials/head')%>
+<body>
+  <%-include('../partials/header')%>
+  <main>
+    <div class="cart-items">
+      <div class="cartLayout">
+        <div class="userCartInfo">
+          <h2 class="productColumn">Item</h2>
+          <h2 class="productPrice">Price</h2>
+          <h2 class="productQuantity">Quantity</h2>
+        </div>
+        <div class="cartContent"></div>
+      </div>
+      <div class="cart-total">
+        <span class="cart-total-title">Total</span>
+        <span class="cart-total-price">$0</span>
+      </div>
+    </div>
+  </main>
+  <%- include('../partials/footer')%>
+  <script src="/js/cartFill.js"></script>
+</body>
+</html>
