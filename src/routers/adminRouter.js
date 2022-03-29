@@ -24,6 +24,8 @@ router.get('/create', adminController.artist_creation_page);
 router.post('/create', adminController.create_artist)
 router.get('/edit/:id', adminController.artist_edit_page);
 router.patch('/edit/:id', adminController.update_artist);
+router.delete('/delete/:id', adminController.delete_artist);
+
 
 // Export
 

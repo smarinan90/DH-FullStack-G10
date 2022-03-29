@@ -98,8 +98,12 @@ module.exports = {
         res.redirect("/admin/products_list");
     },
 
-    edit: (req, res) => {
-        let id = req.param.id;
-    }
+    delete_artist: async (req, res) => {
+
+        db.Artists.destroy({ where: { id: req.param.id } });
+
+        res.redirect("/admin/products_list");
+    },
+
 
 }
