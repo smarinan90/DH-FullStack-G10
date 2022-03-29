@@ -1,83 +1,59 @@
 <%- include('../partials/head')%>
 
-<body>
-  <%- include('../partials/header')%>
-  <main class="main-login">
-    <form action="/register" method="POST" class="formulario">
-      <p class="titulo-register">Nombre</p>
-      <div>
-        <label for="first_name"></label>
-        <input
-          class="input-register"
-          type="text"
-          name="first_name"
-          id="first_name"
-        />
-      </div>
-      <br />
-      <p class="titulo-register">Apellido</p>
-      <div>
-        <label for="last_name"></label>
-        <input
-          class="input-register"
-          type="text"
-          name="last_name"
-          id="last_name"
-        />
-      </div>
-      <br />
-      <p class="titulo-register">E-mail</p>
-      <div>
-        <label for="email"></label>
-        <input class="input-register" type="email" name="email" id="email" />
-      </div>
-      <br />
-      <p class="titulo-register">Fecha de Nacimiento</p>
-      <div>
-        <label for="birth_date"></label>
-        <input
-          class="input-register"
-          type="date"
-          name="birth_date"
-          id="birth_date"
-          value="mm/dd/aaaa"
-        />
-      </div>
-      <br />
-      <p class="titulo-register">Contraseña</p>
-      <div>
-        <label for="password"></label>
-        <input
-          class="input-register"
-          type="password"
-          name="password"
-          id="password"
-        />
-      </div>
-      <br />
-      <p class="titulo-register">Confirmar Contraseña</p>
-      <div>
-        <label for="confirmation_pwd"></label>
-        <input
-          class="input-register"
-          type="password"
-          name="confirmation_pwd"
-          id="confirmation_pwd"
-        />
-      </div>
-      <br />
-      <div>
-        <button class="enviar-button-register" type="submit">Sign Up</button>
-      </div>
-      <br />
-      <p>
-        Already a member?
-        <a href="/login" style="text-decoration: underline; color: white">
-          Sign In
-        </a>
-      </p>
-      <br />
-    </form>
-  </main>
-  <%- include('../partials/footer')%>
-</body>
+  <body>
+    <%- include('../partials/header')%>
+      <main class="main-login">
+        <form action="/register" method="POST" class="formulario">
+          <p class="titulo-register">Nombre</p>
+          <div>
+            <label for="first_name"></label>
+            <input class="input-register" type="text" name="first_name" id="first_name" />
+          </div>
+          <br />
+          <p class="titulo-register">Apellido</p>
+          <div>
+            <label for="last_name"></label>
+            <input class="input-register" type="text" name="last_name" id="last_name" />
+          </div>
+          <br />
+          <p class="titulo-register">E-mail</p>
+          <div>
+            <label for="email"></label>
+            <input class="input-register" type="email" name="email" id="email" />
+          </div>
+          <br />
+          <p class="titulo-register">Fecha de Nacimiento</p>
+          <div>
+            <label for="birth_date"></label>
+            <input class="input-register" type="date" name="birth_date" id="birth_date" value="mm/dd/aaaa" />
+          </div>
+          <br />
+          <p class="titulo-register">Contraseña</p>
+          <div>
+            <label for="password"></label>
+            <input class="input-register" type="password" name="password" id="password" />
+          </div>
+          <br />
+          <p class="titulo-register">Confirmar Contraseña</p>
+          <div>
+            <label for="confirmation_pwd"></label>
+            <input class="input-register" type="password" name="confirmation_pwd" id="confirmation_pwd" />
+          </div>
+          <br />
+          <div>
+            <button class="enviar-button-register" type="submit">Sign Up</button>
+          </div>
+          <br />
+          <p>
+            Already a member?
+            <a href="/login" style="text-decoration: underline; color: white">
+              Sign In
+            </a>
+          </p>
+          <br />
+        </form>
+      </main>
+      <%- include('../partials/footer')%>
+  </body>
+
+  </html>
