@@ -5,7 +5,7 @@ CREATE TABLE `users` (
    `email` VARCHAR(255) NOT NULL,
    `birthday` DATE NOT NULL,
    `password` VARCHAR(255) NOT NULL,
-   `admin` BINARY NOT NULL DEFAULT 0,
+   `admin` BIT NOT NULL DEFAULT 0,
    PRIMARY KEY (`id`)
 );
 
