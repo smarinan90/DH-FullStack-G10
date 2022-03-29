@@ -1,51 +1,55 @@
-<%-include('../partials/head')%>
-<body>
-    <%-include('../partials/header')%>
-    <main>
+<%-include('.. /partials/head')%>
 
-        <h2>Create pruduct:</h2>
+    <body>
+        <%-include('.. /partials/header')%>
+            <main>
 
-        <section>
-            <form action="admin/products_list.ejs" method="post" enctype="multipart/form-data">
+                <h2>Create pruduct:</h2>
 
-                <article>
-                    <label for="artist-name">Artist name:</label>
-                    <input type="text" name="artist-name" id="artist-name">
-                </article>
+                <section>
+                    <form action="admin/products_list.ejs" method="post" enctype="multipart/form-data">
 
-                <article>
-                    <label for="artist-image">Artist image (.jpg, .png or .tiff):</label>
-                    <input type="file" name="artist-image" accept=".jpg .png. .tiff">
-                </article>
+                        <article>
+                            <label for="artist-name">Artist name:</label>
+                            <input type="text" name="artist-name" id="artist-name">
+                        </article>
 
-                <article>
-                    <label for="description">Description:</label>
-                    <textarea name="description" id="description" cols="30" rows="10"></textarea>
-                </article>
+                        <article>
+                            <label for="artist-image">Artist image (.jpg, .png or .tiff):</label>
+                            <input type="file" name="artist-image" accept=".jpg .png. .tiff">
+                        </article>
 
-                <article>
-                    <label for="description">Genre:</label>
-                    <select name="genre" id="genre">
-                        <option value="Blues">Blues</option>
-                        <option value="Country">Country</option>
-                        <option value="Electronic">Electronic</option>
-                        <option value="Folk">Folk</option>
-                        <option value="Hip-hop">Hip-hop</option>
-                        <option value="Jazz">Jazz</option>
-                        <option value="Reggae">Reggae</option>
-                        <option value="Rock">Rock</option>
-                    </select>
-                </article>
+                        <article>
+                            <label for="description">Description:</label>
+                            <textarea name="description" id="description" cols="30" rows="10"></textarea>
+                        </article>
 
-                <article>
-                    <h3>Albums:</h3>
+                        <article>
+                            <label for="description">Genre:</label>
+                            <select name="genre" id="genre">
+                                <option value="Blues">Blues</option>
+                                <option value="Country">Country</option>
+                                <option value="Electronic">Electronic</option>
+                                <option value="Folk">Folk</option>
+                                <option value="Hip-hop">Hip-hop</option>
+                                <option value="Jazz">Jazz</option>
+                                <option value="Reggae">Reggae</option>
+                                <option value="Rock">Rock</option>
+                            </select>
+                        </article>
 
-                    
-                    
-                </article>
+                        <article>
+                            <h3>Albums:</h3>
 
-            </form>
-        </section>
 
-    </main>
-<%- include('../partials/footer')%>
+
+                        </article>
+
+                    </form>
+                </section>
+
+            </main>
+            <%- include('../partials/footer')%>
+    </body>
+
+    </html>

@@ -55,6 +55,27 @@ module.exports = {
         }
 
         res.redirect("/login");
+    },
+
+    login: (req, res) => {
+        res.render("client/login");
+    },
+
+    loginProcess: async (req, res) => {
+        let userLog = await db.Users.findOne({
+            where: { email: email }
+        });
+
+        let pwd_verfification = bcryptjs.compareSync(req.body.password, userLog.password)
+        pwd_verfification ? req.session.userLogged = userLog.id : res.render("client/login", {
+            errors: {
+                email: {
+                    msg: 'La informacion no es correcta'
+                }
+            },
+            oldData: req.body,
+        })
+        res.redirect('/')
     }
 
 }
