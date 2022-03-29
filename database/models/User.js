@@ -29,7 +29,7 @@ module.exports = (sequelize, dataTypes) => {
             allowNull: false
         },
         admin: {
-            type: dataTypes.BLOB,
+            type: dataTypes.BOOLEAN,
             defaultValue: true
         }
     };
