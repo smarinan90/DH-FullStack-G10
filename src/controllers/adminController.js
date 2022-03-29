@@ -3,14 +3,14 @@ const db = require("../../database/models");
 module.exports = {
 
     products_list: async (req, res) => {
-        const artists = db.Artist.findAll();
+        const artists = db.Artists.findAll();
 
         res.render('admin/products_list', {
             artists
         });
     },
 
-    // Artist CRUD
+    // Artists CRUD
 
     artist_creation_page: (req, res) => {
         res.render('admin/artist_create');
@@ -28,7 +28,7 @@ module.exports = {
 
                 const { name, banner, artist_picture, description } = req.body;
 
-                let nameVerification = await db.Artist.findOne({
+                let nameVerification = await db.Artists.findOne({
                     where: { name: name }
                 });
 
@@ -48,7 +48,7 @@ module.exports = {
                     description
                 }
 
-                await db.Artist.create(newArtist);
+                await db.Artists.create(newArtist);
             }
 
             res.redirect("/admin/products_list");
@@ -62,7 +62,7 @@ module.exports = {
 
         try {
             const id = req.params.id;
-            const artistInfo = await db.Artist.findByPk(id);
+            const artistInfo = await db.Artists.findByPk(id);
 
             res.render('admin/artist_create', {
                 oldData: artistInfo
@@ -86,7 +86,7 @@ module.exports = {
 
                 const { name, banner, artist_picture, description } = req.body;
 
-                let nameVerification = await db.Artist.findOne({
+                let nameVerification = await db.Artists.findOne({
                     where: { name: name }
                 });
 
@@ -106,7 +106,7 @@ module.exports = {
                     description
                 }
 
-                await db.Artist.update(newArtist, { where: { id: req.params.id } });
+                await db.Artists.update(newArtist, { where: { id: req.params.id } });
             }
 
             res.redirect("/admin/products_list");
@@ -119,7 +119,7 @@ module.exports = {
     delete_artist: async (req, res) => {
 
         try {
-            await db.Artist.destroy({ where: { id: req.param.id } });
+            await db.Artists.destroy({ where: { id: req.param.id } });
 
             res.redirect("/admin/products_list");
 
@@ -146,7 +146,7 @@ module.exports = {
 
                 const { name, release_date, price, stock, discount, cover_image } = req.body;
 
-                let nameVerification = await db.Album.findOne({
+                let nameVerification = await db.Albums.findOne({
                     where: { name: name }
                 });
 
@@ -168,7 +168,7 @@ module.exports = {
                     cover_image
                 }
 
-                await db.Album.create(newAlbum);
+                await db.Albums.create(newAlbum);
             }
 
             res.redirect("/admin/products_list");
@@ -182,7 +182,7 @@ module.exports = {
 
         try {
             const id = req.params.id;
-            const artistInfo = await db.Album.findByPk(id);
+            const artistInfo = await db.Albums.findByPk(id);
 
             res.render('admin/album_create', {
                 oldData: artistInfo
@@ -206,7 +206,7 @@ module.exports = {
 
                 const { name, release_date, price, stock, discount, cover_image } = req.body;
 
-                let nameVerification = await db.Album.findOne({
+                let nameVerification = await db.Albums.findOne({
                     where: { name: name }
                 });
 
@@ -228,7 +228,7 @@ module.exports = {
                     cover_image
                 }
 
-                await db.Album.update(newAlbum, { where: { id: req.params.id } });
+                await db.Albums.update(newAlbum, { where: { id: req.params.id } });
             }
 
             res.redirect("/admin/products_list");
@@ -241,7 +241,7 @@ module.exports = {
     delete_artist: async (req, res) => {
 
         try {
-            db.Album.destroy({ where: { id: req.param.id } });
+            db.Albums.destroy({ where: { id: req.param.id } });
 
             res.redirect("/admin/products_list");
 
@@ -249,4 +249,4 @@ module.exports = {
             res.send(error)
         }
     }
-}
+};
