@@ -9,25 +9,35 @@
       <% albums.forEach(album => { %>
       <div class="albumProductCard">
         <article class="albumProductContent">
-          <h3 class="albumName"><%= album.name %></h3>
           <picture class="album-card">
-            <a href="#"
-              ><img
-                src="<%= album.albumCover %>"
-                alt="<%= album.name%>"
-                class="album-picture"
-            /></a>
+            <img
+              src="<%= album.albumCover %>"
+              alt="<%= album.name%>"
+              class="album-picture"
+            />
           </picture>
+          <div class="albumInfo">
+            <h3 class="albumName"><%= album.name %></h3>
+            <h4 class="album-price">
+              Price: $<span class="albumPriceInteger"> <%= album.price %></span
+              >,00
+            </h4>
+          </div>
         </article>
-        <button id="addToCart" class="CTA" type="submit">
+        <button
+          id="addToCart"
+          class="CTA"
+          type="submit"
+          data-id="<%= album.idAlbum %>"
+        >
           Add to cart
           <span class="iconify" data-icon="carbon:shopping-cart"></span>
         </button>
       </div>
       <% }) %>
     </section>
+    <%- include("../partials/floatingCart.ejs") %>
   </main>
   <script src="/js/addToCart.js"></script>
-  <script src="/js/isAdmin.js"></script>
 </body>
 <%- include('../partials/footer')%>
