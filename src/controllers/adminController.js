@@ -1,24 +1,21 @@
-const fs = require('fs');
-const path = require('path');
-
-const productsPath = path.join(__dirname, '../database/products.json');
-const productsList = JSON.parse(fs.readFileSync(productsPath, 'utf-8'));
+const db = require("../../database/models");
 
 module.exports = {
-    products_list: (req, res) => {
+    products_list: async (req, res) => {
+        const artists = db.Artists.findAll();
+
         res.render('admin/products_list', {
-            productsList
-        })
+            artists
+        });
     },
     product_edit: (req, res) => {
         res.render('admin/product_edit')
     },
     store: (req, res) => {
         let newProduct = req.body;
-
-
     },
     edit: (req, res) => {
         let id = req.param.id;
     }
+
 }
