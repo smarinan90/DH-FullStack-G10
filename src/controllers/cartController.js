@@ -1,3 +1,5 @@
+const db = require("../../database/models");
+
 module.exports = {
   cart: (req, res) => {
     res.render("client/cart");

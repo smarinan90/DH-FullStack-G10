@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "first_name": "Daniel",
+        "last_name": "Amaya",
+        "email": "dani@gmai.com",
+        "birth_date": "1980-12-12",
+        "password": "$2a$09$n0V8Vzgj3GqY0USR54bze.OqKhQESfDEKy7tyZS5YGtQdycvFOTf."
+    },
+    {
+        "id": 2,
+        "first_name": "Irene",
+        "last_name": "Arango",
+        "email": "irene@gmail.com",
+        "birth_date": "1991-11-01",
+        "password": "$2a$09$kuTWaYcTOjlcZzae8hNatObDdUwGq5Mq/0lonyxdtXASyAJyjC11e"
+    }
+]
