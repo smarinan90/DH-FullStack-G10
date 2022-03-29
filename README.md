@@ -22,6 +22,6 @@ E-commerce para la compra de discos de vinilo
 
 ## Jira
 
-- https://dh-g10.atlassian.net/jira/software/projects/G10/boards/1/roadmap
+https://dh-g10.atlassian.net/jira/software/projects/G11/boards/2
 
 ## Agregar el paso a paso OJO
