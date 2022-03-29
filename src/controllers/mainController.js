@@ -40,7 +40,7 @@ module.exports = {
                 first_name,
                 last_name,
                 email,
-                birth_date,
+                birthday: birth_date,
                 password: pwd
             }
 
