@@ -23,7 +23,7 @@ module.exports = {
 
             let { first_name, last_name, email, birth_date, password, confirmation_pwd } = req.body;
             let pwd = bcryptjs.hashSync(password, 9);
-            let mailVerification = await db.Users.findOne({
+            let mailVerification = await db.User.findOne({
                 where: { email: email }
             });
 
@@ -44,7 +44,7 @@ module.exports = {
                 password: pwd
             }
 
-            bcryptjs.compareSync(confirmation_pwd, pwd) ? db.Users.create(newUser) : res.render("client/register", {
+            bcryptjs.compareSync(confirmation_pwd, pwd) ? db.User.create(newUser) : res.render("client/register", {
                 errors: {
                     email: {
                         msg: 'Hay un error en la informacion'
@@ -62,7 +62,7 @@ module.exports = {
     },
 
     loginProcess: async (req, res) => {
-        let userLog = await db.Users.findOne({
+        let userLog = await db.User.findOne({
             where: { email: email }
         });
 
