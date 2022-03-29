@@ -7,8 +7,8 @@ const cookieParser = require("cookie-parser");
 
 const indexRouter = require("./src/routers/mainRouter");
 const productsRouter = require("./src/routers/productsRouter");
-// const cartRouter = require("./src/routers/cartRouter");
-// const adminRouter = require("./src/routers/adminRouter");
+const cartRouter = require("./src/routers/cartRouter");
+const adminRouter = require("./src/routers/adminRouter");
 
 const PORT = process.env.PORT || 3000;
 
@@ -29,8 +29,8 @@ app.use(express.json());
 
 app.use("/", indexRouter);
 app.use("/products", productsRouter);
-// app.use("/cart", cartRouter);
-// app.use("/admin", adminRouter);
+app.use("/cart", cartRouter);
+app.use("/admin", adminRouter);
 
 app.use((req, res, next) => {
   res.status(404).render("error404");
