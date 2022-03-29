@@ -1,35 +1,15 @@
-const fs = require("fs");
-const path = require("path");
+const db = require("../../database/models");
 
-const productsPath = path.join(__dirname, "../database/products.json");
-const productsList = JSON.parse(fs.readFileSync(productsPath, "utf-8"));
-// console.log(productsList);
-// console.log(productsList[0].albums[0].price);
-// console.log(productsList.forEach((el) => console.log(el.albums[0].price)));
 module.exports = {
-  products: (req, res) => {
-    let genres = [];
-    productsList.forEach((el) => {
-      genres.includes(el.genre) ? genres : genres.push(el.genre);
-    });
+    products: async (req, res) => {
+        const artists = await db.Artists.findAll();
+        res.render("client/products", { artists })
+    },
 
-    let genreFilter = req.query.genre;
-    let listOfProducts = req.query.genre
-      ? productsList.filter((p) => p.genre == genreFilter)
-      : productsList;
+    single_product: async (req, res) => {
+        const id = req.params.id;
+        const artist = await db.Artists.findByPk(id)
+        res.render("client/single_product", { artist })
+    }
 
-    res.render("client/products", {
-      listOfProducts,
-      genres,
-    });
-  },
-  single_product: (req, res) => {
-    let id = req.params.id;
-    let product = productsList.find((p) => p.id == id);
-    let albums = product.albums;
-    res.render("client/single_product", {
-      product,
-      albums,
-    });
-  },
-};
+}

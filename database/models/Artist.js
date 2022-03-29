@@ -31,15 +31,15 @@ module.exports = (sequelize, dataTypes) => {
 
     const Artist = sequelize.define(alias, cols, config);
 
-    Artist.associate = (models) => {
-        Artist.hasMany(models.Artist, {
-            as: "albums",
+    Artist.associate = models => {
+        Artist.hasMany(models.Artists, {
+            as: "artist",
             foreignKey: "artist_id"
         });
     };
 
-    Artist.associate = (models) => {
-        Artist.belongsTo(models.Artist, {
+    Artist.associate = models => {
+        Artist.belongsTo(models.Genres, {
             as: "genre",
             foreignKey: "genre_id"
         });
