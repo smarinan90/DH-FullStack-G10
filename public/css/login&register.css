@@ -1,4 +1,4 @@
-.enviar-button-register,
+/* .enviar-button-register,
 .enviar-button {
   background-color: var(--btn);
   padding: 1.2rem 4rem;
@@ -24,4 +24,32 @@
   .enviar-button-register {
     font-size: var(--text-md);
   }
+} */
+
+
+:root {
+  --dark: #16191c;
+  --dark-x: #1e2126;
+  --light: #fff;
+}
+
+
+body {
+  font-family: 'Spartan', sans-serif;
+  font-weight: 300;
+  color: var(--light);
+} 
+
+.bg-dark { background-color: var(--dark) !important; }
+.bg-dark-x { background-color: var(--dark-x) }
+
+.form-control, btn {
+  min-height: 3.125rem;
+  line-height: initial;
+}
+
+.img-1 {
+  background-image: url('../img/various_img/1.jpg');
+  background-size: cover;
+  background-position: center;
 }

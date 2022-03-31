@@ -16,7 +16,10 @@
     "CSS",
     "HTML",
     "JAVASCRIPT",
-    "NODE.JS"
+    "NODE.JS",
+    "Express.JS",
+    "mysql",
+    "Sequelize"
   ],
   "author": "VARIOUS",
   "license": "ISC",

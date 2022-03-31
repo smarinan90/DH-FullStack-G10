@@ -1,9 +1,11 @@
 <%- include('../partials/head')%>
 
-  <body>
+  <body class="bg-dark">
     <%- include('../partials/header')%>
-      <main class="main-login">
-        <form action="/register" method="POST" class="formulario">
+
+
+
+    <!--     <form action="/register" method="POST" class="formulario">
           <p class="titulo-register">Nombre</p>
           <div>
             <label for="first_name"></label>
@@ -51,8 +53,89 @@
             </a>
           </p>
           <br />
-        </form>
-      </main>
+        </form> -->
+
+
+
+
+        <section>
+
+          <div class="col-lg-5 d-flex flex-column align-items-end min-vh-100">
+
+
+              <div class="px-lg-5 pt-lg-4 pb-lg-3 p-4 w-100 mb-auto">
+                  <img src="Vinyl logo.svg" class="img-fluid">
+              </div>
+
+
+              <div class="px-lg-5 py-lg-4 p-4 w-100 align-self-center">
+
+                    <form class="mb-5" action="/register" method="POST" class="formulario">
+
+                        <div class="mb-2">
+                          <label for="first_name" class="form-label fw-bold"></label>
+                          <input name="first_name" type="text" class="form-control bg-dark-x border-0 mb-2" placeholder="Nombre" id="first_name">
+                        </div>
+
+
+                        <div class="mb-2">
+                          <label for="last_name" class="form-label fw-bold"></label>
+                          <input name="last_name" type="password" class="form-control bg-dark-x border-0 mb-2" placeholder="Apellido" id="last_name">
+                        </div>    
+
+
+                        <div class="mb-2">
+                          <label for="email" class="form-label fw-bold"></label>
+                          <input name="email" type="email" class="form-control bg-dark-x border-0" placeholder="Ingrese E-mail" id="email">
+                        </div>
+
+                        <div class="mb-2">
+                          <label for="birth_date" class="form-label fw-bold"></label>
+                          <input name="birth_date" type="date" class="form-control bg-dark-x border-0" placeholder="hola" id="birth_date" value="Fecha de nacimiento">
+                        </div>
+
+
+                        <div class="mb-2">
+                          <label for="password" class="form-label fw-bold"></label>
+                          <input name="password" type="password" class="form-control bg-dark-x border-0 mb-2" placeholder="Ingrese contraseña" id="password">
+                        </div>
+
+                        <div class="mb-4">
+                          <label for="confirmation_pwd" class="form-label fw-bold"></label>
+                          <input name="confirmation_pwd" type="password" class="form-control bg-dark-x border-0 mb-2" placeholder="Confirmar contraseña" id="confirmation_pwd">
+                        </div> 
+
+
+
+
+
+                        <button type="submit" class="btn btn-primary w-100">Sign Up</button>
+                    </form>
+
+
+                    <p class="fw-bold text-center text-muted">Sign up with</p>
+
+                    <div class="d-flex justify-content-around">
+                      <button type="submit" class="btn btn-outline-light flex-grow-1 me-2 sep1"><i class="fa-brands fa-google lead me-2"></i> Google</button>
+
+                      <button type="submit" class="btn btn-outline-light flex-grow-1 ms-2 sep2"><i class="fa-brands fa-facebook-f lead me-2"></i> Facebook</button>
+                    </div>
+                  </div>
+
+                <div class="text-center px-lg-5 pt-lg-3 pb-lg-4 g-4 w-100 mt-auto">
+                  <p class="d-inline-block mb-0 ">Do you have an account?</p><a href="/login.html" class="text-light fw-bold text-decoration-none"> Sign In</a>
+                </div>
+
+            </div>
+          
+
+
+
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
       <%- include('../partials/footer')%>
   </body>
 
