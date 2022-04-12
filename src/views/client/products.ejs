@@ -8,8 +8,8 @@
             <li class="artists-item">Genres</li>
 
             <li><a href="/products?genre=">All albums</a></li>
-            <%genres.forEach(el=> { %>
-              <li><a href="/products?genre=<%=el%>">
+            <%genres.forEach(genre=> { %>
+              <li><a href="/products?genre=<%=genre%>">
                   <%= genre.name%>
                 </a></li>
               <% }); %>
@@ -22,9 +22,9 @@
           </ul>
         </section>
         <section class="artists-section">
-          <%artists.forEach(el=> {%>
+          <%artists.forEach(artist=> {%>
             <picture class="artist-card">
-              <a href="/products/<%= el.id%>"><img src="/img/artists_banner/<%= el.banner %>" alt="<%= el.name%>"
+              <a href="/products/<%= artist.id%>"><img src="/img/artists_banner/<%= artist.banner %>" alt="<%= artist.name%>"
                   class="artist-picture" /></a>
             </picture>
             <% }); %>

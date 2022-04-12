@@ -4,14 +4,14 @@
   <main>
     <section class="album-section">
       <h1 class="singleProductPageTitle">
-        Discover <%=product.name%>'s albums
+        Discover <%=artist.name%>'s albums
       </h1>
       <% albums.forEach(album => { %>
       <div class="albumProductCard">
         <article class="albumProductContent">
           <picture class="album-card">
             <img
-              src="<%= album.albumCover %>"
+              src="<%= album.cover_image %>"
               alt="<%= album.name%>"
               class="album-picture"
             />

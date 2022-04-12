@@ -28,7 +28,6 @@ window.addEventListener("load", function () {
       addButtonClicked.innerText = "In cart";
       addButtonClicked.style.backgroundColor = "var(--m4)";
       addButtonClicked.disabled = true;
-      console.log(cart);
     } catch (errors) {
       console.log(errors);
     }
