@@ -2,7 +2,6 @@ window.addEventListener("load", function () {
   const deleteItemFromCartButtons =
     document.getElementsByClassName("delete-btn");
   const quantityInputs = document.getElementsByClassName("cart-quantity-input");
-  console.log(JSON.parse(localStorage.getItem("productsInCart")));
 
   // Function to change cart total in function of quantity and price and update the cart's total
   const updateCartTotal = () => {
@@ -34,7 +33,6 @@ window.addEventListener("load", function () {
       const title = item.title;
       const price = item.price;
       const imageSource = item.imageSource;
-      console.log(title, price, imageSource);
       const cartItems = document.getElementsByClassName("cartContent")[0];
       const cartRow = document.createElement("div");
       cartRow.classList.add("cartItem");
