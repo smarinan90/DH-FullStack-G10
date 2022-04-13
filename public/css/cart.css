@@ -24,6 +24,10 @@
 }
 
 /* Cart page styles */
+.cartItems {
+  max-width: 1080px;
+  width: 100%;
+}
 
 .cartLayout {
   display: flex;
@@ -45,4 +49,124 @@
   display: flex;
   justify-content: flex-end;
   gap: 1rem;
+}
+
+.cartItem {
+  display: flex;
+}
+
+.productPrice {
+  padding-left: 4rem;
+}
+
+.cart-item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  min-width: 200px;
+}
+
+.cart-item > * {
+  padding: 1rem;
+}
+
+.cart-item > span {
+  font-size: 1.5rem;
+}
+
+.cart-total {
+  display: flex;
+  justify-content: flex-end;
+}
+.cart-total > * {
+  font-size: 2rem;
+  padding: 0 0.5rem;
+}
+.cart-total-title {
+  font-weight: 700;
+}
+
+.cart-quantity {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+.cart-quantity > * {
+  margin: 0.5rem 0;
+  width: 120px;
+}
+.cart-price {
+  font-size: 1.5rem;
+  padding: 2rem;
+  margin-right: 6rem;
+  font-weight: 700;
+}
+.cart-quantity-input {
+  font-size: 1.5rem;
+}
+
+.purchase-button {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 0;
+}
+/* button styles */
+
+.delete-btn,
+.purchase,
+.goToStore {
+  background-color: var(--btn);
+  padding: 1.2rem 4rem;
+  border-radius: 2rem;
+  font-size: var(--text-sm);
+  color: white;
+  border: none;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.emptyCart {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.emptyCart > a {
+  width: fit-content;
+  margin: 2rem 0;
+  font-size: 4rem;
+}
+.emptyCart > span {
+  font-size: 5rem;
+}
+
+@media screen and (max-width: 480px) {
+  .cart-item > img {
+    visibility: collapse;
+  }
+  .cart-item {
+    min-width: 160px;
+  }
+  .cart-price {
+    margin: 0;
+    padding: 0 1rem;
+  }
+  .delete-btn {
+    padding: 1rem 2rem;
+    /* font-size: 1rem; */
+  }
+  .cart-item-title {
+    overflow-wrap: break-word;
+    max-width: 120px;
+  }
+  .cart-quantity {
+    padding: 0 1rem;
+  }
+  .emptyCart > span {
+    font-size: 2rem;
+  }
+  .emptyCart > a {
+    font-size: 1.5rem;
+  }
 }
