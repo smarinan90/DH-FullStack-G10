@@ -31,17 +31,19 @@
   --dark: #16191c;
   --dark-x: #1e2126;
   --light: #fff;
+  --g3: #23232c;
+
 }
 
 
 body {
   font-family: 'Spartan', sans-serif;
   font-weight: 300;
-  color: var(--light);
+  color: var(--g3);
 } 
 
-.bg-dark { background-color: var(--dark) !important; }
-.bg-dark-x { background-color: var(--dark-x) }
+.bg-dark { background-color: var(--dark-x) !important; }
+.bg-dark-x { background-color: var(--g3) }
 
 .form-control, btn {
   min-height: 3.125rem;
