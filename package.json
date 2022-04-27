@@ -16,7 +16,10 @@
     "CSS",
     "HTML",
     "JAVASCRIPT",
-    "NODE.JS"
+    "NODE.JS",
+    "Express.JS",
+    "mysql",
+    "Sequelize"
   ],
   "author": "VARIOUS",
   "license": "ISC",
@@ -26,6 +29,7 @@
   "homepage": "https://github.com/smarinan90/DH-FullStack-G10#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "bootstrap": "^5.1.3",
     "cookie-parser": "^1.4.6",
     "ejs": "^3.1.6",
     "express": "^4.17.2",

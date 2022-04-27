@@ -41,7 +41,7 @@ html {
 }
 
 body {
-  background-color: var(--g3);
+  background-color: var(--g3) !important;
   /* background-color: #1c1c2b;
   background-image: url("https://www.transparenttextures.com/patterns/binding-dark.png"); */
   color: var(--g1);

@@ -1,8 +1,8 @@
 <%- include('../partials/head')%>
 
-  <body>
+  <body class="bg-dark">
     <%- include('../partials/header')%>
-      <main class="main-login">
+<!--       <main class="main-login">
         <div class="login-form">
           <form action="/login" method="POST" class="login">
             <br>
@@ -31,7 +31,71 @@
             <br />
           </form>
         </div>
-      </main>
+      </main> -->
+
+      <section>
+        <div class="row g-0">
+            <div class="col-lg-7 d-none d-lg-block">
+              <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item img-1 min-vh-100 active">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 d-flex flex-column align-items-end min-vh-100">
+                <div class="px-lg-5 pt-lg-4 pb-lg-3 p-4 w-100 mt-4">
+                    <img class="img-fluid">
+                </div>
+
+
+                <div class="px-lg-5 py-lg-4 p-4 w-100 align-self-center">
+                    <h1 class="fw-bold mb-4">Welcome Back!</h1>
+
+                    <form class="mb-5" action="/login" method="POST" class="#">
+                        <div class="mb-4">
+
+                          <label for="email" class="form-label fw-bold">Email address</label>
+                          <input name="email" type="email" class="form-control bg-dark-x border-0" placeholder="Enter your E-mail" id="email" aria-describedby="emailHelp">
+
+                        </div>
+                        <div class="mb-4">
+
+                          <label for="password" class="form-label fw-bold">Password</label>
+                          <input name="password" type="password" class="form-control bg-dark-x border-0 mb-2" placeholder="Enter your password" id="password">
+                        <div>
+                          <input id="buy" type="checkbox" name="userProfile">
+                          <label name="userProfile" class="titulo-option" for="buy">Remember me</label>
+                        </div>  
+
+                          <a href="a" id="emailHelp" class="form-text text-muted text-decoration-none">Forgot Password?</a>
+                        </div>  
+                        <button type="submit" class="btn btn-primary w-100">Sign In</button>
+                      </form>
+                      <p class="fw-bold text-center text-muted">Sign in with</p>
+                      <div class="d-flex justify-content-around">
+                      <button type="submit" class="btn btn-outline-light flex-grow-1 me-2 sep1"><i class="fa-brands fa-google lead me-2"></i> Google</button>
+                      <button type="submit" class="btn btn-outline-light flex-grow-1 ms-2 sep2"><i class="fa-brands fa-facebook-f lead me-2"></i> Facebook</button>
+                      </div>
+                </div>
+                <div class="text-center px-lg-5 pt-lg-3 pb-lg-4 g-4 w-100">
+                  <p class="d-inline-block mb-0" style="color:white">Don't have an account?</p><a href="/register" class="text-light fw-bold text-decoration-none"> Create one now</a>
+                </div>
+              </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
       <%- include('../partials/footer')%>
   </body>
 
