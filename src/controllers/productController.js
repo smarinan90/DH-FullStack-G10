@@ -16,7 +16,6 @@ module.exports = {
         artist_id: id,
       },
     });
-    console.log(albums);
     res.render("client/single_product", { artist, albums });
   },
 };

@@ -12,6 +12,7 @@ window.addEventListener("load", function () {
     const quantityInputs = document.getElementsByClassName(
       "cart-quantity-input"
     );
+    const purchaseButton = document.getElementById("purchase");
 
     // Function to change cart total in function of quantity and price and update the cart's total
     const updateCartTotal = () => {
@@ -100,17 +101,13 @@ window.addEventListener("load", function () {
 
     // Require the button
 
-    const purchaseButton = document.getElementById("purchase");
-    const purchaseCompleted = (event) => {
-      const purchaseButtonClicked = event.target;
-      purchaseButtonClicked.addEventListener("click", () => {
-        alert(
-          "Purchase has been completed, thank you for trusting Invisible Records!"
-        );
-        localStorage.clear();
-        document.location.reload();
-        updateCartTotal();
-      });
+    const purchaseCompleted = () => {
+      alert(
+        "Purchase has been completed, thank you for trusting Invisible Records!"
+      );
+      localStorage.clear();
+      document.location.reload();
+      updateCartTotal();
     };
     purchaseButton.addEventListener("click", purchaseCompleted);
   }
