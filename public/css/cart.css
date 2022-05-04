@@ -10,7 +10,7 @@
 
 .floatingCartContent > svg {
   font-size: 2rem;
-  color: white;
+  color: white !important;
 }
 
 @media screen and (min-width: 600px) {

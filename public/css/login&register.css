@@ -1,57 +1,35 @@
-/* .enviar-button-register,
-.enviar-button {
-  background-color: var(--btn);
-  padding: 1.2rem 4rem;
-  border-radius: 2rem;
-  font-size: var(--text-sm);
-  color: white;
-  border: none;
-  margin-bottom: 1rem;
-  cursor: pointer;
-}
-
-.register-button {
-  display: flex;
-  justify-content: center;
-}
-
-.register-redirect {
-  text-decoration: underline;
-  color: white;
-}
-
-@media screen and (min-width: 992px) {
-  .enviar-button-register {
-    font-size: var(--text-md);
-  }
-} */
-
-
 :root {
   --dark: #16191c;
   --dark-x: #1e2126;
   --light: #fff;
   --g3: #23232c;
-
 }
 
-
 body {
-  font-family: 'Spartan', sans-serif;
+  font-family: "Spartan", sans-serif;
   font-weight: 300;
   color: var(--g3);
-} 
+}
 
-.bg-dark { background-color: var(--dark-x) !important; }
-.bg-dark-x { background-color: var(--g3) }
+.bg-dark {
+  background-color: var(--dark-x) !important;
+}
+.bg-dark-x {
+  background-color: var(--g3);
+}
 
-.form-control, btn {
+.form-control,
+btn {
   min-height: 3.125rem;
   line-height: initial;
 }
 
 .img-1 {
-  background-image: url('../img/various_img/1.jpg');
+  background-image: url("../img/various_img/1.jpg");
   background-size: cover;
   background-position: center;
+}
+
+label {
+  font-size: var(--text-lg);
 }

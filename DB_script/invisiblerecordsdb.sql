@@ -119,7 +119,7 @@ CREATE TABLE `users` (
   `password` varchar(255) NOT NULL,
   `admin` bit(1) NOT NULL DEFAULT b'0',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -128,6 +128,7 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
+INSERT INTO `users` VALUES (1,'Pepito','Perez','pepe123@gmail.com','2000-04-02','$2a$09$RT37QZalGdZwt3HoKgp6J.kMTJqYLzMZReOvrGHIUSUCxb2FDr9iy',''),(2,'juanchito','gaviria','juancho456@gmail.com','2001-01-01','$2a$09$RPY0rGx/Iao7.lWZK2oBV.8XyT3feSxQHLUWm4pCy7wCLJXloMuLe','\0');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -140,4 +141,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-04-12  3:46:50
+-- Dump completed on 2022-05-03 22:25:06

@@ -35,7 +35,7 @@
   padding: 1.2rem 4rem;
   border-radius: 2rem;
   font-size: var(--text-md);
-  color: white;
+  color: white !important;
 }
 
 .hero-text {
@@ -89,7 +89,7 @@ div > div > section > p {
   padding: 1.2rem 4rem;
   border-radius: 2rem;
   font-size: var(--text-md);
-  color: white;
+  color: white !important;
 }
 
 @media screen and (min-width: 992px) {

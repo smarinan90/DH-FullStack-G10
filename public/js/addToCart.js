@@ -1,10 +1,4 @@
 window.addEventListener("load", function () {
-  // The idea of the script is ready, now I gotta communicate the shop side with the cart side of things and make everything respond to one another.
-
-  // Script to verify if localStorage has already the item
-
-  // Pending...
-
   // Script para agregar y eliminar artículos del cart
   // Requiring every input needed for the logic
   const addToCartButtons = document.getElementsByClassName("CTA");
@@ -31,8 +25,6 @@ window.addEventListener("load", function () {
     } catch (errors) {
       console.log(errors);
     }
-    // addItemToCart(title, price, imageSource);
-    // updateCartTotal();
   };
 
   for (let i = 0; i < addToCartButtons.length; i++) {

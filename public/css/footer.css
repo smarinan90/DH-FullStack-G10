@@ -23,7 +23,6 @@ footer > div > div {
 }
 
 .social-media {
-  padding: 3em;
   display: flex;
   justify-content: center;
 }
@@ -68,6 +67,12 @@ footer > div > div > div > section > a > p {
   display: flex;
   justify-content: center;
 }
+
+a {
+  text-decoration: none !important;
+  color: var(--g1) !important;
+}
+
 @media screen and (min-width: 992px) {
   .social-media,
   .footer-nav-menu {
