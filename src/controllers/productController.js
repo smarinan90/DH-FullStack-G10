@@ -10,7 +10,6 @@ module.exports = {
   single_product: async (req, res) => {
     const id = req.params.id;
     const artist = await db.Artists.findByPk(id);
-    console.log(artist);
     const albums = await db.Albums.findAll({
       where: {
         artist_id: id,

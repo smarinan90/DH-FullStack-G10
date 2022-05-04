@@ -3,62 +3,7 @@
   <body class="bg-dark">
     <%- include('../partials/header')%>
 
-
-
-    <!--     <form action="/register" method="POST" class="formulario">
-          <p class="titulo-register">Nombre</p>
-          <div>
-            <label for="first_name"></label>
-            <input class="input-register" type="text" name="first_name" id="first_name" />
-          </div>
-          <br />
-          <p class="titulo-register">Apellido</p>
-          <div>
-            <label for="last_name"></label>
-            <input class="input-register" type="text" name="last_name" id="last_name" />
-          </div>
-          <br />
-          <p class="titulo-register">E-mail</p>
-          <div>
-            <label for="email"></label>
-            <input class="input-register" type="email" name="email" id="email" />
-          </div>
-          <br />
-          <p class="titulo-register">Fecha de Nacimiento</p>
-          <div>
-            <label for="birth_date"></label>
-            <input class="input-register" type="date" name="birth_date" id="birth_date" value="mm/dd/aaaa" />
-          </div>
-          <br />
-          <p class="titulo-register">Contraseña</p>
-          <div>
-            <label for="password"></label>
-            <input class="input-register" type="password" name="password" id="password" />
-          </div>
-          <br />
-          <p class="titulo-register">Confirmar Contraseña</p>
-          <div>
-            <label for="confirmation_pwd"></label>
-            <input class="input-register" type="password" name="confirmation_pwd" id="confirmation_pwd" />
-          </div>
-          <br />
-          <div>
-            <button class="enviar-button-register" type="submit">Sign Up</button>
-          </div>
-          <br />
-          <p>
-            Already a member?
-            <a href="/login" style="text-decoration: underline; color: white">
-              Sign In
-            </a>
-          </p>
-          <br />
-        </form> -->
-
-
-
-
-        <section>
+        <section style="display:flex; justify-content:center">
 
           <div class="col-lg-5 d-flex flex-column align-items-end min-vh-100">
 
@@ -69,40 +14,40 @@
 
 
               <div class="px-lg-5 py-lg-4 p-4 w-100 align-self-center">
-
-                    <form class="mb-5" action="/register" method="POST" class="#">
+<div id="errors" style="color: var(--m1); font-size: var(--text-lg)"></div>
+                    <form class="mb-5" action="/register" method="POST" class="#" id="registerForm">
 
                         <div class="mb-2">
-                          <label for="first_name" class="form-label fw-bold"></label>
-                          <input name="first_name" type="text" class="form-control bg-dark-x border-0 mb-2" placeholder="Nombre" id="first_name">
+                          <label for="first_name" class="form-label fw-bold">First Name</label>
+                          <input name="first_name" type="text" class="form-control bg-dark-x border-0 mb-2" placeholder="First Name" id="first_name">
                         </div>
 
 
                         <div class="mb-2">
-                          <label for="last_name" class="form-label fw-bold"></label>
-                          <input name="last_name" type="password" class="form-control bg-dark-x border-0 mb-2" placeholder="Apellido" id="last_name">
+                          <label for="last_name" class="form-label fw-bold">Last Name</label>
+                          <input name="last_name" type="text" class="form-control bg-dark-x border-0 mb-2" placeholder="Last Name" id="last_name">
                         </div>    
 
 
                         <div class="mb-2">
-                          <label for="email" class="form-label fw-bold"></label>
-                          <input name="email" type="email" class="form-control bg-dark-x border-0" placeholder="Ingrese E-mail" id="email">
+                          <label for="email" class="form-label fw-bold">Email</label>
+                          <input name="email" type="email" class="form-control bg-dark-x border-0" placeholder="Enter your E-mail" id="email">
                         </div>
 
                         <div class="mb-2">
-                          <label for="birth_date" class="form-label fw-bold"></label>
-                          <input name="birth_date" type="date" class="form-control bg-dark-x border-0" placeholder="hola" id="birth_date" value="Fecha de nacimiento">
+                          <label for="birth_date" class="form-label fw-bold">Birthday</label>
+                          <input name="birth_date" type="date" class="form-control bg-dark-x border-0" id="birth_date">
                         </div>
 
 
                         <div class="mb-2">
-                          <label for="password" class="form-label fw-bold"></label>
-                          <input name="password" type="password" class="form-control bg-dark-x border-0 mb-2" placeholder="Ingrese contraseña" id="password">
+                          <label for="password" class="form-label fw-bold">Password</label>
+                          <input name="password" type="password" class="form-control bg-dark-x border-0 mb-2" placeholder="Password" id="password">
                         </div>
 
                         <div class="mb-4">
-                          <label for="confirmation_pwd" class="form-label fw-bold"></label>
-                          <input name="confirmation_pwd" type="password" class="form-control bg-dark-x border-0 mb-2" placeholder="Confirmar contraseña" id="confirmation_pwd">
+                          <label for="confirmation_pwd" class="form-label fw-bold">Confirm password</label>
+                          <input name="confirmation_pwd" type="password" class="form-control bg-dark-x border-0 mb-2" placeholder="Confirm password" id="confirmation_pwd">
                         </div> 
 
 
@@ -123,7 +68,7 @@
                   </div>
 
                 <div class="text-center px-lg-5 pt-lg-3 pb-lg-4 g-4 w-100">
-                  <p class="d-inline-block mb-0" style="color:white">Do you have an account?</p><a href="/login" class="text-light fw-bold text-decoration-none"> Sign In</a>
+                  <p class="d-inline-block mb-0" >Do you have an account?</p><a href="/login" class="text-light fw-bold text-decoration-none"> Sign In</a>
                 </div>
 
             </div>
@@ -134,7 +79,7 @@
   </section>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
+<script src="\js\validations\registerValidations.js"></script>
 
       <%- include('../partials/footer')%>
   </body>
