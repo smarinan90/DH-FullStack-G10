@@ -62,19 +62,27 @@ module.exports = {
     },
 
     loginProcess: async (req, res) => {
+
+        const { email, password } = req.body;
         let userLog = await db.Users.findOne({
-            where: { email: email }
+            where: { email }
         });
 
-        let pwd_verfification = bcryptjs.compareSync(req.body.password, userLog.password)
-        pwd_verfification ? req.session.userLogged = userLog.id : res.render("client/login", {
-            errors: {
-                email: {
-                    msg: 'La informacion no es correcta'
-                }
-            },
-            oldData: req.body,
-        })
-        res.redirect('/')
+        console.log(userLog)
+
+        let pwd_verfification = bcryptjs.compareSync(password, userLog.password)
+        if (pwd_verfification) {
+            req.session.userLogged = userLog.id
+            res.redirect('/')
+        } else {
+            res.render("client/login", {
+                errors: {
+                    email: {
+                        msg: 'La informacion no es correcta'
+                    }
+                },
+                oldData: req.body,
+            })
+        }
     }
 };
