@@ -73,6 +73,7 @@ module.exports = {
         let pwd_verfification = bcryptjs.compareSync(password, userLog.password)
         if (pwd_verfification) {
             req.session.userLogged = userLog.id
+            res.cookie('email', email)
             res.redirect('/')
         } else {
             res.render("client/login", {
