@@ -1,13 +1,13 @@
-<%-include('partials /head')%>
+<%- include('../partials/head.ejs')%>
 
     <body class="bg-dark">
-        <%-include('partials /header')%>
+        <%- include('../partials/header')%>
         <section>
 
             <div class="col-lg-5 d-flex flex-column align-items-end min-vh-100">
     
                 <div class="px-lg-5 pt-lg-4 pb-lg-3 p-4 w-100 mb-1">
-                    <img src="../../../public/img/various_img/Vinyl Logo.svg" class="img-fluid">
+                    <img  class="img-fluid">
                 </div>
                     <div class="px-lg-5 py-lg-4 p-4 w-100 align-self-center">
                         <form class="mb-5">
@@ -35,6 +35,15 @@
                             <div class="mb-2">
                                 <label for="discount" class="form-label fw-bold"></label>
                                 <input name="discount" type="text" class="form-control bg-dark-x border-0 mb-2" placeholder="Discount" id="discount">
+                            </div>
+
+                            <div class="mb-2">
+                                <label for="discount" class="form-label fw-bold">Artist:</label>
+                                <select name="artist" id="artist">
+                                    <option value="The Weeknd">The Weeknd</option>
+                                    <option value="Disclosure">Disclosure</option>
+                                    <option value="Deadmau5">Deadmau5</option>
+                                </select>
                             </div>
     
     
