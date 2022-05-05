@@ -1,59 +1,66 @@
-const path = require("path");
-const db = require("../../database/models");
-const sequelize = db.sequelize;
-const { Op } = require("sequelize");
-const moment = require("moment");
+const db = require("../../../database/models");
 
-//Aqui tienen otra forma de llamar a cada uno de los modelos
-const Movies = db.Movie;
-const Genres = db.Genre;
-const Actors = db.Actor;
-//---------------------------
-//Dentro del actorsAPIController uso las dos forma de poder llamar a nuestros modelo
-//----------------------------------
 const genresAPIController = {
-  list: (req, res) => {
-    db.Genre.findAll().then((genres) => {
-      let respuesta = {
-        meta: {
-          status: 200,
-          total: genres.length,
-          url: "api/genres",
-        },
-        data: genres,
-      };
-      res.json(respuesta);
-    });
-  },
+  albums: (req, res) => {
+    db.Albums.findAll().then((albums) => {
 
-  detail: (req, res) => {
-    db.Genre.findByPk(req.params.id).then((genre) => {
-      let respuesta = {
-        meta: {
-          status: 200,
-          total: genre.length,
-          url: "/api/genre/:id",
-        },
-        data: genre,
-      };
-      res.json(respuesta);
+      try {
+        let respuesta = {
+          meta: {
+            status: 200,
+            total: albums.length,
+            url: "api/products/albums",
+          },
+          data: albums
+        };
+        res.json(respuesta);
+
+      } catch (error) {
+        throw error
+      }
+
     });
   },
-  genreMovies: (req, res) => {
-    db.Genre.findByPk(req.params.id, {
-      include: ["movies"],
-    }).then((genre) => {
-      let respuesta = {
-        meta: {
-          status: 200,
-          total: genre.length,
-          url: "/api/genre/:id/movies",
-        },
-        data: genre,
-      };
-      res.json(respuesta);
+  artists: (req, res) => {
+    db.Artists.findAll().then((artists) => {
+
+      try {
+        let respuesta = {
+          meta: {
+            status: 200,
+            total: artists.length,
+            url: "api/products/artists",
+          },
+          data: artists
+        };
+        res.json(respuesta);
+
+      } catch (error) {
+        throw error
+      }
+
     });
   },
+  genres: (req, res) => {
+    db.Genres.findAll().then((genres) => {
+
+      try {
+        let respuesta = {
+          meta: {
+            status: 200,
+            total: genres.length,
+            url: "api/products/genres",
+          },
+          data: genres
+        };
+        res.json(respuesta);
+
+      } catch (error) {
+        throw error
+      }
+
+    });
+  }
 };
 
 module.exports = genresAPIController;
