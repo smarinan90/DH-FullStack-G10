@@ -1,9 +1,81 @@
-<%-include('partials /head')%>
+<%-include('../partials/head')%>
 
     <body>
-        <%-include('partials /header')%>
-            <h1>Soy el body</h1>
-            <%- include('partials/footer')%>
+        <%-include('../partials/header')%>
+
+  <main>
+      <section class="artists-section" style="width: 100%;">
+        <h1 class="singleProductPageTitle">
+          Manage products
+        </h1>
+        <h2 class="singleProductPageTitle">
+          Manage artists
+        </h2>
+          <%artists.forEach(artist=> {%>
+            <picture class="artist-card">
+              <img src="/img/artists_banner/<%= artist.banner %>" alt="<%= artist.name%>"
+                  class="artist-picture" />
+            </picture>
+            <a href="/admin/editArtist/<%= artist.id%>">
+            <button
+              id="Edit"
+              class="editAlbum"
+            >
+              Edit artist
+            </button>
+            </a>
+            <form action="/admin/deleteArtist/<%= artist.id %>?_method=DELETE" method="POST">
+                <button
+                id="Delete"
+                class="deleteAlbum"
+                type="submit"
+                >
+                Delete artist
+            </button>
+        </form>
+            <% }); %>
+        </section>
+        <section class="album-section">
+        <h2>Manage albums</h2>
+      <% albums.forEach(album => { %>
+      <div class="albumProductCard">
+        <article class="albumProductContent">
+          <picture class="album-card">
+            <img
+              src="<%= album.cover_image %>"
+              alt="<%= album.name%>"
+              class="album-picture"
+            />
+          </picture>
+          <div class="albumInfo">
+            <h3 class="albumName"><%= album.name %></h3>
+            <h4 class="album-price">
+              Price: $<span class="albumPriceInteger"> <%= album.price %></span
+              >,00
+            </h4>
+          </div>
+        </article>
+            <a
+              id="Edit"
+              class="editAlbum"
+              href="/admin/editAlbum/<%= album.id%>"
+            >
+              Edit product
+            </a>
+            <form action="/admin/deleteAlbum/<%= album.id %>?_method=DELETE" method="POST">
+                <button
+          id="Delete"
+          class="deleteAlbum"
+          type="submit"
+        >
+          Delete product
+        </button>
+        </form>
+      </div>
+      <% }) %>
+    </section>
+  </main>
+            <%- include('../partials/footer')%>
     </body>
 
     </html>

@@ -45,3 +45,23 @@ a {
     width: 6%;
   }
 }
+
+/* Product list styles */
+.deleteAlbum,
+.editAlbum {
+  padding: 1.2rem 4rem;
+  border-radius: 2rem;
+  font-size: var(--text-lg);
+  color: white !important;
+  border: none;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  width: 100%;
+}
+
+.editAlbum {
+  background-color: var(--g1);
+}
+.deleteAlbum {
+  background-color: red;
+}

@@ -1,11 +1,12 @@
-const express = require('express');
+const express = require("express");
 const router = express.Router();
+const adminMiddleware = require("../middleware/isAdmin");
 
-const cartController = require('../controllers/cartController');
+const cartController = require("../controllers/cartController");
 
 // Cart Routes
 
-router.get('/', cartController.cart);
+router.get("/", adminMiddleware, cartController.cart);
 
 // Export
 

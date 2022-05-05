@@ -22,11 +22,16 @@
       <article class="menu-list">
         <ul>
           <li class="menu-item"><a href="/products">Artists</a></li>
+          <% if (locals.isLogged && locals.userLogged.admin == 1) { %>
+
+          <li class="menu-item"><a href="/admin">Admin Settings</a></li>
+          <% } %> <% if (!locals.isLogged) { %>
+
           <li class="menu-item"><a href="/cart">Cart</a></li>
-          <li class="menu-item"><a href="#">Contact</a></li>
-          <li class="menu-item"><a href="#">About</a></li>
           <li class="menu-item"><a href="/login">Login</a></li>
           <li class="menu-item"><a href="/register">Register</a></li>
+          <% } %>
+          <li class="menu-item"><a href="#">About</a></li>
         </ul>
       </article>
     </div>

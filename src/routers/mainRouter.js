@@ -2,6 +2,7 @@ const express = require("express");
 const router = express.Router();
 const { body } = require("express-validator");
 const path = require("path");
+const adminMiddleware = require("../middleware/isAdmin");
 
 const mainController = require("../controllers/mainController");
 
@@ -41,12 +42,11 @@ const validator = [
 
 // Main Routes
 
-router.get("/", mainController.home);
+router.get("/", adminMiddleware, mainController.home);
 router.get("/register", mainController.register);
 router.post("/register", validator, mainController.createUser);
 router.get("/login", mainController.login);
-router.post("/login", mainController.loginProcess)
-
+router.post("/login", mainController.loginProcess);
 
 // Export
 
