@@ -59,7 +59,6 @@ DROP TABLE IF EXISTS `artists`;
 CREATE TABLE `artists` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(255) NOT NULL,
-  `banner` varchar(255) NOT NULL,
   `artist_picture` varchar(255) NOT NULL,
   `genre_id` int(11) NOT NULL,
   `description` text DEFAULT NULL,
@@ -75,7 +74,7 @@ CREATE TABLE `artists` (
 
 LOCK TABLES `artists` WRITE;
 /*!40000 ALTER TABLE `artists` DISABLE KEYS */;
-INSERT INTO `artists` VALUES (1,'The Weeknd','Weekend.png','Weekend.png',1,'Abel Makkonen Tesfaye (born February 16, 1990), known professionally as the Weeknd, is a Canadian singer-songwriter and record producer. Known for his sonic versatility and dark lyricism, Tesfaye\'s music explores escapism, romance, and melancholia, and is often inspired by personal experiences. '),(2,'Disclosure','Disclosure.png','Disclosure.png',2,'Disclosure is an English electronic music duo consisting of brothers Howard (born 11 May 1994) and Guy Lawrence (born 25 May 1991).  They grew up in Reigate, Surrey. '),(3,'Deadmau5','Deadmau5.png','Deadmau5.png',2,'Joel Thomas Zimmerman (born January 5, 1981),[2] known professionally as Deadmau5 (stylized as deadmau5; pronounced \'dead-mouse\'), is a Canadian electronic music producer, DJ, and musician.');
+INSERT INTO `artists` VALUES (1,'The Weeknd','Weekend.png',5,'Abel Makkonen Tesfaye (born February 16, 1990), known professionally as the Weeknd, is a Canadian singer-songwriter and record producer. Known for his sonic versatility and dark lyricism, Tesfaye\'s music explores escapism, romance, and melancholia, and is often inspired by personal experiences. '),(2,'Disclosure','Disclosure.png',3,'Disclosure is an English electronic music duo consisting of brothers Howard (born 11 May 1994) and Guy Lawrence (born 25 May 1991).  They grew up in Reigate, Surrey. '),(3,'Deadmau5','Deadmau5.png',3,'Joel Thomas Zimmerman (born January 5, 1981),[2] known professionally as Deadmau5 (stylized as deadmau5; pronounced \'dead-mouse\'), is a Canadian electronic music producer, DJ, and musician.');
 /*!40000 ALTER TABLE `artists` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -99,7 +98,7 @@ CREATE TABLE `genres` (
 
 LOCK TABLES `genres` WRITE;
 /*!40000 ALTER TABLE `genres` DISABLE KEYS */;
-INSERT INTO `genres` VALUES (1,'Hip-Hop'),(2,'Electronic');
+INSERT INTO `genres` VALUES (1,'Blues'),(2,'Country'),(3,'Electronic'),(4,'Folk'),(5,'Hip-Hop'),(6,'Jazz'),(7,'Reggae'),(8,'Rock');
 /*!40000 ALTER TABLE `genres` ENABLE KEYS */;
 UNLOCK TABLES;
 
