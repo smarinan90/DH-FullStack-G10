@@ -13,59 +13,72 @@ module.exports = {
 
   // Artists CRUD
 
-  artist_creation_page: (req, res) => {
-    res.render("admin/artist_create");
+  artist_creation_page: async (req, res) => {
+    try {
+      const genres = await db.Genres.findAll();
+
+      res.render("admin/artist_create", {
+        genres: genres
+      });
+    } catch (error) {
+      res.send(error)
+    }
   },
 
   create_artist: async (req, res) => {
     try {
-      const valResult = validationResult(req);
-      if (!valResult.errors) {
-        return res.render("admin/artist_create", {
-          errors: valResult.mapped(),
-          oldData: req.body,
-        });
-      } else {
-        const { name, banner, artist_picture, description } = req.body;
+      // const valResult = validationResult(req);
+      // if (!valResult.errors) {
+      //   return res.render("admin/artist_create", {
+      //     errors: valResult.mapped(),
+      //     oldData: req.body,
+      //   });
+      // } else {
 
-        let nameVerification = await db.Artists.findOne({
-          where: { name: name },
-        });
+      const { name, description, genre } = req.body;
+      const artist_picture = req.file.filename
 
-        nameVerification
-          ? res.render("admin/artist_create", {
-              errors: {
-                email: {
-                  msg: "El artista ya existe",
-                },
-              },
-              oldData: req.body,
-            })
-          : null;
+      let nameVerification = await db.Artists.findOne({
+        where: { name: name },
+      });
 
-        const newArtist = {
-          name,
-          banner,
-          artist_picture,
-          description,
-        };
+      // nameVerification
+      //   ? res.render("admin/artist_create", {
+      //     errors: {
+      //       email: {
+      //         msg: "El artista ya existe",
+      //       },
+      //     },
+      //     oldData: req.body,
+      //   })
+      //   : null;
 
-        await db.Artists.create(newArtist);
-      }
+      const newArtist = {
+        name,
+        description,
+        genre_id: genre,
+        artist_picture
+      };
 
-      res.redirect("/admin/products_list");
+      await db.Artists.create(newArtist);
+      // }
+
+      res.redirect("/admin");
     } catch (error) {
       res.send(error);
     }
   },
 
   artist_edit_page: async (req, res) => {
+    const genres = await db.Genres.findAll();
+
     try {
       const id = req.params.id;
       const artistInfo = await db.Artists.findByPk(id);
 
       res.render("admin/artist_create", {
-        oldData: artistInfo,
+        genres: genres,
+        oldData: artistInfo
       });
     } catch (error) {
       res.send(error);
@@ -81,7 +94,7 @@ module.exports = {
           oldData: req.body,
         });
       } else {
-        const { name, banner, artist_picture, description } = req.body;
+        const { name, artist_picture, description, genre } = req.body;
 
         let nameVerification = await db.Artists.findOne({
           where: { name: name },
@@ -89,13 +102,13 @@ module.exports = {
 
         nameVerification
           ? res.render("admin/artist_create", {
-              errors: {
-                email: {
-                  msg: "El artista ya existe",
-                },
+            errors: {
+              email: {
+                msg: "El artista ya existe",
               },
-              oldData: req.body,
-            })
+            },
+            oldData: req.body,
+          })
           : null;
 
         const newArtist = {
@@ -103,6 +116,7 @@ module.exports = {
           banner,
           artist_picture,
           description,
+          genre
         };
 
         await db.Artists.update(newArtist, { where: { id: req.params.id } });
@@ -148,13 +162,13 @@ module.exports = {
 
         nameVerification
           ? res.render("admin/album_create", {
-              errors: {
-                email: {
-                  msg: "El album ya existe",
-                },
+            errors: {
+              email: {
+                msg: "El album ya existe",
               },
-              oldData: req.body,
-            })
+            },
+            oldData: req.body,
+          })
           : null;
 
         const newAlbum = {
@@ -205,13 +219,13 @@ module.exports = {
 
         nameVerification
           ? res.render("admin/album_create", {
-              errors: {
-                email: {
-                  msg: "El artista ya existe",
-                },
+            errors: {
+              email: {
+                msg: "El artista ya existe",
               },
-              oldData: req.body,
-            })
+            },
+            oldData: req.body,
+          })
           : null;
 
         const newAlbum = {

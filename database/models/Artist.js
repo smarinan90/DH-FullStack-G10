@@ -11,10 +11,6 @@ module.exports = (sequelize, dataTypes) => {
             type: dataTypes.STRING,
             allowNull: false
         },
-        banner: {
-            type: dataTypes.STRING,
-            allowNull: false
-        },
         artist_picture: {
             type: dataTypes.STRING,
             allowNull: false,
