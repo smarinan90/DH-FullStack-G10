@@ -20,12 +20,18 @@ const upload = multer({ storage })
 // Admin Routes
 
 router.get('/', adminController.products_list);
-router.get('/create', adminController.artist_creation_page);
-router.post('/create', adminController.create_artist)
-router.get('/edit/:id', adminController.artist_edit_page);
-router.patch('/edit/:id', adminController.update_artist);
-router.delete('/delete/:id', adminController.delete_artist);
 
+router.get('/createArtist', adminController.artist_creation_page);
+router.post('/createArtist', adminController.create_artist);
+router.get('/editArtist/:id', adminController.artist_edit_page);
+router.patch('/editArtist/:id', adminController.update_artist);
+router.delete('/deleteArtist/:id', adminController.delete_artist);
+
+router.get('/createAlbum', adminController.artist_creation_page);
+router.post('/createAlbum', adminController.create_artist);
+router.get('/editAlbum/:id', adminController.artist_edit_page);
+router.patch('/editAlbum/:id', adminController.update_artist);
+router.delete('/deleteAlbum/:id', adminController.delete_artist);
 
 // Export
 

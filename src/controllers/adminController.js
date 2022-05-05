@@ -238,7 +238,7 @@ module.exports = {
         }
     },
 
-    delete_artist: async (req, res) => {
+    delete_album: async (req, res) => {
 
         try {
             db.Albums.destroy({ where: { id: req.param.id } });
