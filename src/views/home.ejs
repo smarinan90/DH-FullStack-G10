@@ -15,7 +15,10 @@
                 Jump in and start exploring albums you never knew you liked!
               </p>
               <div class="hero-button">
-                <a href="/register">Sign Up</a>
+                <% if (!locals.isLogged) { %>
+
+                  <a href="/register">Sign Up</a>
+          <% } %>
               </div>
             </section>
           </div>
