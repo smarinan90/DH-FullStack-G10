@@ -24,8 +24,8 @@
         <section class="artists-section">
           <%artists.forEach(artist=> {%>
             <picture class="artist-card">
-              <a href="/products/<%= artist.id%>"><img src="/img/artists_banner/<%= artist.banner %>" alt="<%= artist.name%>"
-                  class="artist-picture" /></a>
+              <a href="/products/<%= artist.id%>"><img src="/img/artists_banner/<%= artist.artist_picture %>"
+                  alt="<%= artist.name%>" class="artist-picture" /></a>
             </picture>
             <% }); %>
         </section>
