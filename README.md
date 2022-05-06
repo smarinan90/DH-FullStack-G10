@@ -36,6 +36,8 @@ En caso de tener inconvenientes con la comunicación de sequelize ejecutar npm i
 
 En la carpeta del proyecto se encuentra el script invisiblerecordsdb.sql, este archivo debe ser descargado por el usuario e inicializado en su máquina local para poder acceder a la base de datos de los productos y usuarios para que estos puedan ser correctamente devueltos por las vistas.
 
+El server de la app está en el puerto 3000.
+
 La app tiene 2 usuarios de prueba, el primer usuario es administrador cuyo correo es pepe123@gmail.com y su contraseña es 12345678. El segundo usuario es un "cliente" cuyo correo es juancho456@gmail.com y su contraseña es 87654321.
 
 Estos usuarios han sido creados con el fin de notar las distintas funcionalidades de la app cuando se es administrador o cliente.
