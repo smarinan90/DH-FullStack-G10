@@ -13,7 +13,7 @@ const storage = multer.diskStorage({
   filename: (req, file, cb) => {
     const fileName = Date.now() + path.extname(file.originalname);
     cb(null, fileName);
-  }
+  },
 });
 
 const upload = multer({ storage });
@@ -23,12 +23,20 @@ const upload = multer({ storage });
 router.get("/", adminMiddleware, adminController.products_list);
 
 router.get("/createArtist", adminController.artist_creation_page);
-router.post("/createArtist", upload.single('artist_picture'), adminController.create_artist);
+router.post(
+  "/createArtist",
+  upload.single("artist_picture"),
+  adminController.create_artist
+);
 router.get("/editArtist/:id", adminController.artist_edit_page);
-router.patch("/editArtist/:id", upload.single('artist_picture'), adminController.update_artist);
+router.patch(
+  "/editArtist/:id",
+  upload.single("artist_picture"),
+  adminController.update_artist
+);
 router.delete("/deleteArtist/:id", adminController.delete_artist);
 
-// router.get("/createAlbum", adminController.album_creation_page);
+router.get("/createAlbum", adminController.album_creation_page);
 // router.post("/createAlbum", upload2.single('cover_image'), adminController.create_album);
 // router.get("/editAlbum/:id", adminController.album_edit_page);
 // router.patch("/editAlbum/:id", upload2.single('cover_image'), adminController.update_album);
